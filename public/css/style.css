@@ -1,1 +1,46 @@
+@font-face {
+  font-family: "PTSans-Regular";
+  src: url("/fonts/PTSans-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "RobotoMono-Regular";
+  src: url("/fonts/RobotoMono-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Merriweather-Bold";
+  src: url("/fonts/Merriweather-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+body {
+  background-color: #31333b;
+  color: #eaeaea;
+}
+body::-webkit-scrollbar {
+  width: 2px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #ffc86b;
+}
+body::-webkit-scrollbar-track {
+  background-color: rgba(52, 53, 58, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
 
+.oh {
+  overflow: hidden;
+}
+
+.main-block {
+  width: 100%;
+  height: 100vh;
+  background-color: #34353a;
+}
+.main-block:first-child {
+  padding-top: 120px;
+}
