@@ -31,3 +31,23 @@ body {
         padding-top: 120px;
     }
 }
+
+
+
+
+
+
+
+// ============================================== Media =============================================
+
+@media screen and (max-width: 960px) {
+    .main-block:first-child {
+        padding-top: 100px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-block:first-child {
+        padding-top: 70px;
+    }
+}
