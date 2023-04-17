@@ -1,1 +1,18 @@
-
+@font-face {
+  font-family: "PTSans-Regular";
+  src: url("/fonts/PTSans-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "RobotoMono-Regular";
+  src: url("/fonts/RobotoMono-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Merriweather-Bold";
+  src: url("/fonts/Merriweather-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}

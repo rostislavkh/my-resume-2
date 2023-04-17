@@ -9,6 +9,7 @@ mix.js('resources/js/default.js', 'js');
 
 
 // default
+mix.sass('resources/scss/reset.scss', 'css');
 mix.sass('resources/scss/style.scss', 'css');
 mix.sass('resources/scss/fonts.scss', 'css');
 mix.sass('resources/scss/variables.scss', 'css');

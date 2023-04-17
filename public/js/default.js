@@ -11,6 +11,19 @@
 
 /***/ }),
 
+/***/ "./resources/scss/reset.scss":
+/*!***********************************!*\
+  !*** ./resources/scss/reset.scss ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/scss/style.scss":
 /*!***********************************!*\
   !*** ./resources/scss/style.scss ***!
@@ -139,7 +152,8 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			"/js/default": 0,
 /******/ 			"css/variables": 0,
 /******/ 			"css/fonts": 0,
-/******/ 			"css/style": 0
+/******/ 			"css/style": 0,
+/******/ 			"css/reset": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -189,10 +203,11 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/variables","css/fonts","css/style"], () => (__webpack_require__("./resources/js/default.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/variables","css/fonts","css/style"], () => (__webpack_require__("./resources/scss/style.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/variables","css/fonts","css/style"], () => (__webpack_require__("./resources/scss/fonts.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/variables","css/fonts","css/style"], () => (__webpack_require__("./resources/scss/variables.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/variables","css/fonts","css/style","css/reset"], () => (__webpack_require__("./resources/js/default.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/variables","css/fonts","css/style","css/reset"], () => (__webpack_require__("./resources/scss/reset.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/variables","css/fonts","css/style","css/reset"], () => (__webpack_require__("./resources/scss/style.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/variables","css/fonts","css/style","css/reset"], () => (__webpack_require__("./resources/scss/fonts.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/variables","css/fonts","css/style","css/reset"], () => (__webpack_require__("./resources/scss/variables.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

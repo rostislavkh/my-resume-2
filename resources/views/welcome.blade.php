@@ -6,6 +6,7 @@
 
         <title>Resume</title>
 
+        <link rel="stylesheet" href="{{ mix('css/reset.css') }}">
         <link rel="stylesheet" href="{{ mix('css/style.css') }}">
     </head>
     <body>
