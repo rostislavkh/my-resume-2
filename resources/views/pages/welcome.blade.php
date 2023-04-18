@@ -41,4 +41,55 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur ducimus praesentium velit iste sequi ut. Cupiditate qui, dicta in alias aut autem nesciunt! Tempora nam laborum sequi magni nihil!
         </div>
     </section>
+    <h1 class="title">My skills</h1>
+    <section class="skills container">
+        <a href="#" class="skills__block">
+            <img src="./img/logos/php.svg" alt="logo">
+            <span>PHP</span>
+        </a>
+        <a href="#" class="skills__block">
+            <img src="./img/logos/pma.png" alt="logo">
+            <span>PHPmyadmin</span>
+        </a>
+        <a href="#" class="skills__block">
+            <img src="./img/logos/mysql.png" alt="logo">
+            <span>MySQL</span>
+        </a>
+        <a href="#" class="skills__block">
+            <img src="./img/logos/orchid.png" alt="logo">
+            <span>Orchid</span>
+        </a>
+        <a href="#" class="skills__block">
+            <img src="./img/logos/laravel.png" alt="logo">
+            <span>Laravel</span>
+        </a>
+        <a href="#" class="skills__block">
+            <img src="./img/logos/markup.png" alt="logo">
+            <span>HTML & CSS</span>
+        </a>
+        <a href="#" class="skills__block">
+            <img src="./img/logos/js.png" alt="logo">
+            <span>JS</span>
+        </a>
+        <a href="#" class="skills__block">
+            <img src="./img/logos/jq.svg" alt="logo">
+            <span>JQuery</span>
+        </a>
+        <a href="#" class="skills__block">
+            <img src="./img/logos/vue.png" alt="logo">
+            <span>Vue.js</span>
+        </a>
+        <a href="#" class="skills__block">
+            <img src="./img/logos/git.png" alt="logo">
+            <span>Git</span>
+        </a>
+        <a href="#" class="skills__block">
+            <img src="./img/logos/botstrap.png" alt="logo">
+            <span>Bootstrap</span>
+        </a>
+        <a href="#" class="skills__block">
+            <img src="./img/logos/python.png" alt="logo">
+            <span>Python</span>
+        </a>
+    </section>
 @endsection
