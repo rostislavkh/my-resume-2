@@ -39,7 +39,7 @@
 
             &:hover {
                 background-color: $yellow;
-                color: $txt-color;
+                color: $bg-block-2;
                 transition: .3s;
             }
         }
@@ -173,7 +173,7 @@
         width: 250px;
         height: 250px;
         border-radius: 20px;
-        background-color: $bg-block;
+        background-color: $bg-block-2;
         box-shadow: $tile-shadow;
         justify-content: space-between;
         flex-direction: column;
@@ -194,6 +194,7 @@
 
     &__block:hover {
         background-color: $yellow;
+        color: $bg-block-2;
         transition: .3s;
 
         img {

@@ -54,7 +54,7 @@
 }
 .titule__text a:hover {
   background-color: #ffc86b;
-  color: #eaeaea;
+  color: #3d3e42;
   transition: 0.3s;
 }
 .titule__name {
@@ -85,7 +85,7 @@
 
 .block-1 {
   overflow: hidden;
-  background-color: #3d3e42;
+  background-color: #34353a;
   box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -185,6 +185,7 @@
 }
 .skills__block:hover {
   background-color: #ffc86b;
+  color: #3d3e42;
   transition: 0.3s;
 }
 .skills__block:hover img {
