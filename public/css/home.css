@@ -303,12 +303,103 @@
   transition: 0.3s;
 }
 
+.experience {
+  margin-top: 125px;
+  background-color: #3d3e42;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  padding: 60px 0;
+}
+.experience .title {
+  text-align: start;
+  margin-top: -85px;
+}
+.experience .exp__items {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  max-width: 700px;
+  gap: 50px;
+  margin-top: 80px;
+  margin-left: 422px;
+}
+.experience .exp__item {
+  padding-left: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+  position: relative;
+}
+.experience .exp__item::before {
+  position: absolute;
+  content: "";
+  height: calc(100% - 40px);
+  left: -20px;
+  bottom: 0;
+  width: 3px;
+  background-color: #eaeaea;
+  box-shadow: 0px 0px 30px 0px rgba(255, 201, 107, 0.4588235294);
+}
+.experience .exp__item::after {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  top: 0;
+  left: -33px;
+  background-color: #ffc86b;
+  box-shadow: 0px 0px 20px 0px #ffc86b;
+}
+.experience .exp__position {
+  font-family: "PTSans-Regular";
+  font-size: 28px;
+  font-weight: bold;
+}
+.experience .exp__company {
+  font-family: "PTSans-Regular";
+  font-size: 24px;
+}
+.experience .exp__description {
+  font-size: 18px;
+  color: #b9b9ba;
+  margin-top: 10px;
+}
+.experience .exp__date {
+  position: absolute;
+  top: -10px;
+  right: calc(100% + 80px);
+  width: -moz-max-content;
+  width: max-content;
+  background-color: #5c5d60;
+  padding: 10px 10px 10px 20px;
+  z-index: 1;
+}
+.experience .exp__date::before {
+  content: "";
+  border-radius: 50% 50% 0 50%;
+  position: absolute;
+  background-color: #5c5d60;
+  width: 48px;
+  height: 48px;
+  top: 0;
+  right: -20px;
+  z-index: -1;
+  transform: rotate(-45deg);
+  pointer-events: none;
+}
+
 @media screen and (max-width: 1350px) {
   .titule__img {
     margin-right: -20%;
   }
   .titule__text {
     margin: auto;
+  }
+  .experience .exp__items {
+    margin-left: 30%;
   }
 }
 @media screen and (max-width: 1080px) {
@@ -332,6 +423,26 @@
   .portfolio__block {
     width: 320px;
     height: 320px;
+  }
+  .experience .exp__items {
+    margin-left: auto;
+  }
+  .experience .exp__date {
+    position: initial;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    padding: 10px;
+  }
+  .experience .exp__date::before {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .experience .exp__item::before {
+    left: 5px;
+  }
+  .experience .exp__item::after {
+    left: -8px;
   }
 }
 @media screen and (max-width: 734px) {

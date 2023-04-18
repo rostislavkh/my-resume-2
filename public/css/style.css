@@ -61,10 +61,9 @@ body::-webkit-scrollbar-track {
 }
 
 .text {
-  font-family: "RobotoMono-Regular";
-  font-size: 18px;
-  letter-spacing: -1px;
-  line-height: 25px;
+  font-family: "PTSans-Regular";
+  font-size: 24px;
+  line-height: 28px;
   color: #eaeaea;
 }
 

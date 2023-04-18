@@ -47,10 +47,9 @@ body {
 }
 
 .text {
-    font-family: $txt-f;
-    font-size: $txt-s;
-    letter-spacing: $lsp-txt;
-    line-height: $lh-txt;
+    font-family: $header-f;
+    font-size: $subtitle-mobile-s;
+    line-height: 28px;
     color: $txt-color;
 }
 

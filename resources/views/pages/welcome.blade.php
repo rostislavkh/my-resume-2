@@ -117,55 +117,108 @@
         </div>
     </section>
     <h1 class="title">Portfilo</h1>
-    <section class="portfolio container" id="portfolio">
-        <div class="portfolio__block">
-            <img src="./img/works/1.png" alt="work">
-            <div>
-                <span class="work__title">Title</span>
-                <span class="work__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum pariatur consequuntur porro non magnam autem, placeat dolores mollitia asperiores dignissimos illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum pariatur consequuntur porro non magnam autem, placeat dolores mollitia asperiores dignissimos illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum pariatur consequuntur porro non magnam autem, placeat dolores mollitia asperiores dignissimos illum.</span>
-                <a href="#">See More -></a>
+    <section id="portfolio">
+        <div class="portfolio container">
+            <div class="portfolio__block">
+                <img src="./img/works/1.png" alt="work">
+                <div>
+                    <span class="work__title">Title</span>
+                    <span class="work__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae
+                        commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum pariatur consequuntur
+                        porro non magnam autem, placeat dolores mollitia asperiores dignissimos illum.Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Numquam molestiae commodi repellendus consequatur incidunt
+                        explicabo suscipit laudantium, rerum pariatur consequuntur porro non magnam autem, placeat dolores
+                        mollitia asperiores dignissimos illum.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Numquam molestiae commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum
+                        pariatur consequuntur porro non magnam autem, placeat dolores mollitia asperiores dignissimos
+                        illum.</span>
+                    <a href="#">See More -></a>
+                </div>
+            </div>
+            <div class="portfolio__block">
+                <img src="./img/works/2.png" alt="work">
+                <div>
+                    <span class="work__title">Title</span>
+                    <span class="work__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae
+                        commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum pariatur consequuntur
+                        porro non magnam autem, placeat dolores mollitia asperiores dignissimos illum.</span>
+                    <a href="#">See More -></a>
+                </div>
+            </div>
+            <div class="portfolio__block">
+                <img src="./img/works/3.png" alt="work">
+                <div>
+                    <span class="work__title">Title</span>
+                    <span class="work__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae
+                        commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum pariatur consequuntur
+                        porro non magnam autem, placeat dolores mollitia asperiores dignissimos illum.</span>
+                    <a href="#">See More -></a>
+                </div>
+            </div>
+            <div class="portfolio__block">
+                <img src="./img/works/4.png" alt="work">
+                <div>
+                    <span class="work__title">Title</span>
+                    <span class="work__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae
+                        commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum pariatur consequuntur
+                        porro non magnam autem, placeat dolores mollitia asperiores dignissimos illum.</span>
+                    <a href="#">See More -></a>
+                </div>
+            </div>
+            <div class="portfolio__block">
+                <img src="./img/works/5.png" alt="work">
+                <div>
+                    <span class="work__title">Title</span>
+                    <span class="work__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae
+                        commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum pariatur consequuntur
+                        porro non magnam autem, placeat dolores mollitia asperiores dignissimos illum.</span>
+                    <a href="#">See More -></a>
+                </div>
+            </div>
+            <div class="portfolio__block">
+                <img src="./img/works/6.png" alt="work">
+                <div>
+                    <span class="work__title">Title</span>
+                    <span class="work__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae
+                        commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum pariatur consequuntur
+                        porro non magnam autem, placeat dolores mollitia asperiores dignissimos illum.</span>
+                    <a href="#">See More -></a>
+                </div>
             </div>
         </div>
-        <div class="portfolio__block">
-            <img src="./img/works/2.png" alt="work">
-            <div>
-                <span class="work__title">Title</span>
-                <span class="work__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum pariatur consequuntur porro non magnam autem, placeat dolores mollitia asperiores dignissimos illum.</span>
-                <a href="#">See More -></a>
-            </div>
-        </div>
-        <div class="portfolio__block">
-            <img src="./img/works/3.png" alt="work">
-            <div>
-                <span class="work__title">Title</span>
-                <span class="work__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum pariatur consequuntur porro non magnam autem, placeat dolores mollitia asperiores dignissimos illum.</span>
-                <a href="#">See More -></a>
-            </div>
-        </div>
-        <div class="portfolio__block">
-            <img src="./img/works/4.png" alt="work">
-            <div>
-                <span class="work__title">Title</span>
-                <span class="work__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum pariatur consequuntur porro non magnam autem, placeat dolores mollitia asperiores dignissimos illum.</span>
-                <a href="#">See More -></a>
-            </div>
-        </div>
-        <div class="portfolio__block">
-            <img src="./img/works/5.png" alt="work">
-            <div>
-                <span class="work__title">Title</span>
-                <span class="work__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum pariatur consequuntur porro non magnam autem, placeat dolores mollitia asperiores dignissimos illum.</span>
-                <a href="#">See More -></a>
-            </div>
-        </div>
-        <div class="portfolio__block">
-            <img src="./img/works/6.png" alt="work">
-            <div>
-                <span class="work__title">Title</span>
-                <span class="work__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum pariatur consequuntur porro non magnam autem, placeat dolores mollitia asperiores dignissimos illum.</span>
-                <a href="#">See More -></a>
+        <a class="more-projects" href="#">View More</a>
+        <div class="experience">
+            <div class="experience__content container">
+                <h1 class="title">Experience</h1>
+                <div class="exp__items">
+                    <div class="exp__item">
+                        <span class="exp__date text">08.2022-02.2023</span>
+                        <div class="exp__position">PHP developer (Laravel)</div>
+                        <div class="exp__company">WebGenerator</div>
+                        <div class="text exp__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque fugit explicabo maxime facilis, sapiente corrupti animi sint placeat perspiciatis, id, ullam nulla beatae architecto exercitationem itaque quibusdam temporibus facere!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque fugit explicabo maxime facilis, sapiente corrupti animi sint placeat perspiciatis, id, ullam nulla beatae architecto exercitationem itaque quibusdam temporibus facere!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque fugit explicabo maxime facilis, sapiente corrupti animi sint placeat perspiciatis, id, ullam nulla beatae architecto exercitationem itaque quibusdam temporibus facere!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque fugit explicabo maxime facilis, sapiente corrupti animi sint placeat perspiciatis, id, ullam nulla beatae architecto exercitationem itaque quibusdam temporibus facere!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque fugit explicabo maxime facilis, sapiente corrupti animi sint placeat perspiciatis, id, ullam nulla beatae architecto exercitationem itaque quibusdam temporibus facere!
+                        </div>
+                    </div>
+                    <div class="exp__item">
+                        <span class="exp__date text">08.2022-02.2023</span>
+                        <div class="exp__position">PHP developer (Laravel)</div>
+                        <div class="exp__company">WebGenerator</div>
+                        <div class="text exp__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque fugit explicabo maxime facilis, sapiente corrupti animi sint placeat perspiciatis, id, ullam nulla beatae architecto exercitationem itaque quibusdam temporibus facere!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque fugit explicabo maxime facilis, sapiente corrupti animi sint placeat perspiciatis, id, ullam nulla beatae architecto exercitationem itaque quibusdam temporibus facere!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque fugit explicabo maxime facilis, sapiente corrupti animi sint placeat perspiciatis, id, ullam nulla beatae architecto exercitationem itaque quibusdam temporibus facere!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque fugit explicabo maxime facilis, sapiente corrupti animi sint placeat perspiciatis, id, ullam nulla beatae architecto exercitationem itaque quibusdam temporibus facere!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque fugit explicabo maxime facilis, sapiente corrupti animi sint placeat perspiciatis, id, ullam nulla beatae architecto exercitationem itaque quibusdam temporibus facere!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque fugit explicabo maxime facilis, sapiente corrupti animi sint placeat perspiciatis, id, ullam nulla beatae architecto exercitationem itaque quibusdam temporibus facere!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque fugit explicabo maxime facilis, sapiente corrupti animi sint placeat perspiciatis, id, ullam nulla beatae architecto exercitationem itaque quibusdam temporibus facere!
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <a class="more-projects" href="#">View More</a>
 @endsection
