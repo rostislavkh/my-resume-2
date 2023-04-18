@@ -16,11 +16,29 @@ function liveHeader() {
     $("header").removeClass("small");
   }
 }
+function scrollspy() {
+  var sections = $('section'),
+    nav = $('.links'),
+    nav_height = nav.outerHeight(),
+    cur_pos = $(this).scrollTop();
+  sections.each(function () {
+    var top = $(this).offset().top - nav_height,
+      bottom = top + $(this).outerHeight();
+    if (cur_pos >= top && cur_pos <= bottom) {
+      nav.find('a').removeClass('active');
+      sections.removeClass('active');
+      $(this).addClass('active');
+      nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
+    }
+  });
+}
 $(window).on('load', function () {
   liveHeader();
+  scrollspy();
 });
 $(window).scroll(function () {
   liveHeader();
+  scrollspy();
 });
 $('.burger-btn').click(function () {
   document.querySelector('.mobile-header').classList.toggle('active');
