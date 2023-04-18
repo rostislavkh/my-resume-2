@@ -76,4 +76,10 @@ body::-webkit-scrollbar-track {
   .main-block:first-child {
     padding-top: 70px;
   }
+  .text {
+    font-size: 18px;
+  }
+  .title {
+    font-size: 34px;
+  }
 }

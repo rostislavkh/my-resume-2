@@ -71,4 +71,12 @@ body {
     .main-block:first-child {
         padding-top: 70px;
     }
+
+    .text {
+        font-size: $subtitle-mobile-2-s;
+    }
+
+    .title {
+        font-size: $title-mobile-s;
+    }
 }
