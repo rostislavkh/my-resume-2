@@ -92,7 +92,7 @@ video {
     box-sizing: border-box;
 
     &::selection {
-        color: $txt-color;
+        color: $bg-block;
         background-color: $yellow;
     }
 }
@@ -113,7 +113,7 @@ section {
     display: block;
     transition: .3s;
     &::selection {
-        color: $txt-color;
+        color: $bg-block;
         background-color: $yellow;
     }
 }
@@ -123,7 +123,7 @@ body {
     line-height: 1;
     transition: .3s;
     &::selection {
-        color: $txt-color;
+        color: $bg-block;
         background-color: $yellow;
     }
 }
@@ -134,7 +134,7 @@ ul {
     list-style: none;
     transition: .3s;
     &::selection {
-        color: $txt-color;
+        color: $bg-block;
         background-color: $yellow;
     }
 }
@@ -145,7 +145,7 @@ q {
     quotes: none;
     transition: .3s;
     &::selection {
-        color: $txt-color;
+        color: $bg-block;
         background-color: $yellow;
     }
 }
@@ -159,7 +159,7 @@ q:after {
     content: none;
     transition: .3s;
     &::selection {
-        color: $txt-color;
+        color: $bg-block;
         background-color: $yellow;
     }
 }
@@ -170,7 +170,7 @@ table {
     border-spacing: 0;
     transition: .3s;
     &::selection {
-        color: $txt-color;
+        color: $bg-block;
         background-color: $yellow;
     }
 }
@@ -182,7 +182,7 @@ button {
     outline: none;
     transition: .3s;
     &::selection {
-        color: $txt-color;
+        color: $bg-block;
         background-color: $yellow;
     }
 }

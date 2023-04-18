@@ -216,6 +216,119 @@
 
 
 
+
+
+// ============================================== Portfolio =============================================
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    &__block {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        overflow: hidden;
+        transition: .3s;
+
+        &:hover img {
+            transform: scale(1.05);
+            transition: .3s;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: .3s;
+        }
+
+        div {
+            width: 100%;
+            height: 100%;
+            background-color: $bg-header;
+            backdrop-filter: blur(8px);
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            top: 0;
+            left: 0;
+            padding: 10px;
+            opacity: 0;
+            transition: .3s;
+
+            .work__title {
+                font-family: $txt-f;
+                font-size: $subtitle-s;
+                letter-spacing: $lsp-txt;
+            }
+
+            .work__text {
+                text-align: center;
+                height: fit-content;
+                display: block;
+                max-width: 400px;
+                -webkit-line-clamp: 3;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-family: $txt-f;
+                font-size: $subtitle-mobile-3-s;
+                line-height: $lh-txt;
+            }
+
+            a {
+                font-family: $txt-f;
+                font-size: $subtitle-mobile-3-s;
+                line-height: $lh-txt;
+                color: $bg-block-2;
+                background-color: $yellow;
+                border-radius: 10px;
+                padding: 5px 20px;
+                font-weight: bold;
+                transition: .3s;
+                
+                &:hover {
+                    box-shadow: $yellow-shadow;
+                    padding: 10px 40px;
+                    transition: .3s;
+                }
+            }
+
+            &:hover {
+                opacity: 1;
+                transition: .3s;
+            }
+        }
+    }
+}
+
+.more-projects {
+    display: block;
+    width: fit-content;
+    font-family: $txt-f;
+    font-size: $subtitle-mobile-2-s;
+    line-height: $lh-txt;
+    color: $bg-block-2;
+    background-color: $yellow;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-weight: bold;
+    margin: 40px auto;
+    transition: .3s;
+
+    &:hover {
+        box-shadow: $yellow-shadow;
+        transform: scale(1.05);
+        transition: .3s;
+    }
+}
+
+
 // ============================================== Media =============================================
 
 @media screen and (max-width: 1350px) {
@@ -250,6 +363,22 @@
         &::before {
             right: 23px;
             top: -120px;
+        }
+    }
+
+    .portfolio {
+        &__block {
+            width: 320px;
+            height: 320px;
+        }
+    }
+}
+
+@media screen and (max-width: 734px) {
+    .portfolio {
+        &__block {
+            width: 280px;
+            height: 280px;
         }
     }
 }
@@ -338,6 +467,13 @@
             }
         }
     }
+
+    .portfolio {
+        &__block {
+            width: 100%;
+            height: 400px;
+        }
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -358,6 +494,12 @@
             font-size: $title-mobile-s;
         }
     }
+
+    .portfolio {
+        &__block {
+            height: 220px;
+        }
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -374,6 +516,12 @@
 
         &__text &__name {
             font-size: $title-mobile-2-s;
+        }
+    }
+
+    .portfolio {
+        &__block {
+            height: 180px;
         }
     }
 }
