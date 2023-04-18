@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="{{ mix('css/reset.css') }}">
         <link rel="stylesheet" href="{{ mix('css/style.css') }}">
         <link rel="stylesheet" href="{{ mix('css/header.css') }}">
+        @yield('styles')
     </head>
     <body>
         <header>
@@ -50,23 +51,10 @@
             </div>
         </div>
         <main>
-            <section class="main-block block-1">
-                <div class="div">1 block</div>
-            </section>
-            <section class="main-block block-1" style="background-color: #31333b;">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod officiis. Voluptatem assumenda deleniti quaerat porro praesentium vitae commodi autem ut eaque ea unde in mollitia, quae inventore possimus vero.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod officiis. Voluptatem assumenda deleniti quaerat porro praesentium vitae commodi autem ut eaque ea unde in mollitia, quae inventore possimus vero.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod officiis. Voluptatem assumenda deleniti quaerat porro praesentium vitae commodi autem ut eaque ea unde in mollitia, quae inventore possimus vero.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod officiis. Voluptatem assumenda deleniti quaerat porro praesentium vitae commodi autem ut eaque ea unde in mollitia, quae inventore possimus vero.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod officiis. Voluptatem assumenda deleniti quaerat porro praesentium vitae commodi autem ut eaque ea unde in mollitia, quae inventore possimus vero.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod officiis. Voluptatem assumenda deleniti quaerat porro praesentium vitae commodi autem ut eaque ea unde in mollitia, quae inventore possimus vero.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod officiis. Voluptatem assumenda deleniti quaerat porro praesentium vitae commodi autem ut eaque ea unde in mollitia, quae inventore possimus vero.
-            </section>
-            <section class="block-2">
-
-            </section>
+            @yield('content')
         </main>
         <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
         <script src="{{ mix('js/default.js') }}"></script>
+        @yield('scripts')
     </body>
 </html>
