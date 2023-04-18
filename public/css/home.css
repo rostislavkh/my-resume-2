@@ -75,8 +75,18 @@
   margin-top: -80px;
 }
 
+.main-block {
+  width: 100%;
+  height: 100vh;
+}
+.main-block:first-child {
+  padding-top: 120px;
+}
+
 .block-1 {
   overflow: hidden;
+  background-color: #34353a;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
 }
 
 .profession {
@@ -84,6 +94,40 @@
 }
 .profession ul {
   display: none;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  flex-direction: column;
+  position: absolute;
+  right: 100px;
+  bottom: 5px;
+}
+.social a {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.social a svg {
+  fill: #eaeaea;
+  transition: 0.3s;
+}
+.social a:hover svg {
+  fill: #ffc86b;
+  transition: 0.3s;
+}
+.social::before {
+  position: absolute;
+  right: 23px;
+  top: -120px;
+  content: "";
+  background-color: #ffc86b;
+  height: 100px;
+  width: 2px;
 }
 
 @media screen and (max-width: 1350px) {
@@ -94,21 +138,29 @@
     margin: auto;
   }
 }
-@media screen and (max-width: 1140px) {
-  .titule__img {
-    margin-right: -30%;
-  }
-}
 @media screen and (max-width: 1080px) {
   .titule {
     flex-direction: column;
   }
   .titule__img img {
     margin-top: -160px;
-    margin-right: -100px;
+    margin-right: -140px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .social {
+    right: 20px;
+    bottom: 10px;
+  }
+  .social::before {
+    right: 23px;
+    top: -120px;
   }
 }
 @media screen and (max-width: 625px) {
+  .social {
+    display: none;
+  }
   .titule {
     justify-content: center;
     align-items: center;
