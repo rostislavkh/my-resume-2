@@ -16,7 +16,7 @@
         p {
             max-width: 500px;
             display: flex;
-            align-items: end;
+            align-items: flex-end;
             font-size: $subtitle-s;
             font-family: $txt-f;
 
@@ -69,6 +69,14 @@
 
 .block-1 {
     overflow: hidden;
+}
+
+.profession {
+    display: flex;
+
+    ul {
+        display: none;
+    }
 }
 
 

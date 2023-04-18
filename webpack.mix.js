@@ -5,6 +5,9 @@ const mix = require('laravel-mix');
 // default
 mix.js('resources/js/default.js', 'js');
 
+// pages
+mix.js('resources/js/pages/home.js', 'js');
+
 //========================================================= SCSS file ===========================================================
 
 
