@@ -42,7 +42,7 @@
         </div>
     </section>
     <h1 class="title">My skills</h1>
-    <section class="skills container">
+    <section class="skills container oh">
         <a href="#" class="skills__block">
             <img src="./img/logos/php.svg" alt="logo">
             <span>PHP</span>

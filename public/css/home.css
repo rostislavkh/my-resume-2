@@ -157,6 +157,7 @@
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
+  padding-bottom: 100px;
   position: relative;
 }
 .skills__block {
@@ -192,8 +193,8 @@
 }
 .skills__dots {
   position: absolute;
-  bottom: -170px;
-  right: -40px;
+  bottom: 0;
+  right: 0;
   z-index: -1;
   pointer-events: none;
   width: 150px;
