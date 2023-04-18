@@ -52,9 +52,10 @@ body::-webkit-scrollbar-track {
 }
 
 .typed-cursor {
+  margin-top: auto !important;
   height: 100% !important;
-  background-color: #ffc86b !important;
-  margin: auto 5px !important;
+  color: #ffc86b !important;
+  font-size: 28px !important;
 }
 
 @media screen and (max-width: 960px) {

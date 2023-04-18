@@ -15,8 +15,8 @@
                 <p><span>I'M</span> <span class="titule__name">Rostyslav Khorolskyi</span></p>
                 <div class="profession">
                     <ul id="proff">
-                        <li>PHP Back-end develorep (Laravel)</li>
-                        <li>Web developer</li>
+                        <li>PHP Back-end develorep.</li>
+                        <li>Web developer.</li>
                     </ul>
                     <p id="profession"></p>
                 </div>

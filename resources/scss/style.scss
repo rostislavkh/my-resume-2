@@ -39,9 +39,10 @@ body {
 }
 
 .typed-cursor {
+    margin-top: auto!important;
     height: 100%!important;
-    background-color: $yellow!important;
-    margin: auto 5px!important;
+    color: $yellow!important;
+    font-size: $subtitle-s!important;
 }
 
 

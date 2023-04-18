@@ -3,5 +3,6 @@ var typed = new Typed('#profession', {
     loop: true,
     typeSpeed: 100,
     backSpeed: 100,
-    backDelay: 2000,
+    backDelay: 5000,
+    fadeOut: true,
 });
