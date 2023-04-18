@@ -113,7 +113,7 @@ header {
             font-size: $header-s;
             font-family: $header-f;
             border: none;
-            border-radius: 5px;
+            border-radius: 10px;
             padding: 10px 35px 10px 10px;
             width: 160px;
             letter-spacing: $lsp;
@@ -240,7 +240,7 @@ header.small {
             font-size: $header-s;
             font-family: $header-f;
             border: 1px solid $txt-color-inact;
-            border-radius: 5px;
+            border-radius: 10px;
             padding: 10px 35px 10px 10px;
             width: 100%;
             letter-spacing: $lsp;

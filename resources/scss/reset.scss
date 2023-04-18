@@ -90,6 +90,11 @@ video {
     vertical-align: baseline;
     text-decoration: none;
     box-sizing: border-box;
+
+    &::selection {
+        color: $txt-color;
+        background-color: $yellow;
+    }
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -107,12 +112,20 @@ section {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     display: block;
     transition: .3s;
+    &::selection {
+        color: $txt-color;
+        background-color: $yellow;
+    }
 }
 
 body {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     line-height: 1;
     transition: .3s;
+    &::selection {
+        color: $txt-color;
+        background-color: $yellow;
+    }
 }
 
 ol,
@@ -120,6 +133,10 @@ ul {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     list-style: none;
     transition: .3s;
+    &::selection {
+        color: $txt-color;
+        background-color: $yellow;
+    }
 }
 
 blockquote,
@@ -127,6 +144,10 @@ q {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     quotes: none;
     transition: .3s;
+    &::selection {
+        color: $txt-color;
+        background-color: $yellow;
+    }
 }
 
 blockquote:before,
@@ -137,6 +158,10 @@ q:after {
     content: "";
     content: none;
     transition: .3s;
+    &::selection {
+        color: $txt-color;
+        background-color: $yellow;
+    }
 }
 
 table {
@@ -144,6 +169,10 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
     transition: .3s;
+    &::selection {
+        color: $txt-color;
+        background-color: $yellow;
+    }
 }
 
 input,
@@ -152,4 +181,8 @@ button {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     outline: none;
     transition: .3s;
+    &::selection {
+        color: $txt-color;
+        background-color: $yellow;
+    }
 }

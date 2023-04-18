@@ -17,6 +17,9 @@ mix.sass('resources/scss/variables.scss', 'css');
 // components
 mix.sass('resources/scss/components/header.scss', 'css');
 
+// pages
+mix.sass('resources/scss/pages/home.scss', 'css');
+
 // lib
 // mix.styles([
 //     'resources/scss/libs/slick.css',
