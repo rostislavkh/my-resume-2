@@ -91,5 +91,6 @@
             <img src="./img/logos/python.png" alt="logo">
             <span>Python</span>
         </a>
+        <img class="skills__dots" src="./img/dots.png" alt="dots">
     </section>
 @endsection

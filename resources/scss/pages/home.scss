@@ -164,8 +164,10 @@
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
+    position: relative;
 
     &__block {
+        z-index: 1;
         display: flex;
         width: 250px;
         height: 250px;
@@ -197,6 +199,15 @@
             transform: scale(1.05);
             transition: .3s;
         }
+    }
+
+    &__dots {
+        position: absolute;
+        bottom: -170px;
+        right: -40px;
+        z-index: -1;
+        pointer-events: none;
+        width: 150px;
     }
 }
 

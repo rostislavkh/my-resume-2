@@ -157,8 +157,10 @@
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
+  position: relative;
 }
 .skills__block {
+  z-index: 1;
   display: flex;
   width: 250px;
   height: 250px;
@@ -187,6 +189,14 @@
 .skills__block:hover img {
   transform: scale(1.05);
   transition: 0.3s;
+}
+.skills__dots {
+  position: absolute;
+  bottom: -170px;
+  right: -40px;
+  z-index: -1;
+  pointer-events: none;
+  width: 150px;
 }
 
 @media screen and (max-width: 1350px) {
