@@ -15,7 +15,7 @@
         <header>
             <a href="/" class="logo"><img src="./img/logo.png" alt="logo"></a>
             <ul class="links">
-                <li><a class="active" href="#">About</a></li>
+                <li><a class="active" href="#about-me">About me</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -42,7 +42,7 @@
                 <button type="submit"></button>
             </form>
             <ul class="links">
-                <li><a class="active" href="#">About</a></li>
+                <li><a class="active" href="#about-me">About me</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>

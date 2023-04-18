@@ -16,6 +16,10 @@
   font-style: normal;
   font-weight: 700;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #31333b;
   color: #eaeaea;
@@ -47,6 +51,18 @@ body::-webkit-scrollbar-track {
   height: 100% !important;
   color: #ffc86b !important;
   font-size: 28px !important;
+}
+
+.title {
+  font-size: 48px;
+  font-family: "Merriweather-Bold";
+}
+
+.text {
+  font-family: "RobotoMono-Regular";
+  font-size: 18px;
+  letter-spacing: -1px;
+  line-height: 25px;
 }
 
 @media screen and (max-width: 960px) {

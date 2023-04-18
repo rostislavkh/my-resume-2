@@ -1,5 +1,9 @@
 @import 'variables.scss';
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: $bg;
     color: $txt-color;
@@ -33,6 +37,18 @@ body {
     height: 100%!important;
     color: $yellow!important;
     font-size: $subtitle-s!important;
+}
+
+.title {
+    font-size: $title-s;
+    font-family: $title-f;
+}
+
+.text {
+    font-family: $txt-f;
+    font-size: $txt-s;
+    letter-spacing: $lsp-txt;
+    line-height: $lh-txt;
 }
 
 

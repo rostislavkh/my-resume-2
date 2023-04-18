@@ -33,12 +33,12 @@
             </ul>
         </div>
     </section>
-    <section class="block-2">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere error provident magnam, perspiciatis, in debitis obcaecati aut nesciunt aperiam aliquid iste doloribus vitae magni sequi mollitia possimus sapiente, animi qui.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere error provident magnam, perspiciatis, in debitis obcaecati aut nesciunt aperiam aliquid iste doloribus vitae magni sequi mollitia possimus sapiente, animi qui.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere error provident magnam, perspiciatis, in debitis obcaecati aut nesciunt aperiam aliquid iste doloribus vitae magni sequi mollitia possimus sapiente, animi qui.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere error provident magnam, perspiciatis, in debitis obcaecati aut nesciunt aperiam aliquid iste doloribus vitae magni sequi mollitia possimus sapiente, animi qui.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere error provident magnam, perspiciatis, in debitis obcaecati aut nesciunt aperiam aliquid iste doloribus vitae magni sequi mollitia possimus sapiente, animi qui.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere error provident magnam, perspiciatis, in debitis obcaecati aut nesciunt aperiam aliquid iste doloribus vitae magni sequi mollitia possimus sapiente, animi qui.
+    <section class="block-2 about container" id="about-me">
+        <h1 class="title about__title">About me</h1>
+        <div class="about__text text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur ducimus praesentium velit iste sequi ut. Cupiditate qui, dicta in alias aut autem nesciunt! Tempora nam laborum sequi magni nihil!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur ducimus praesentium velit iste sequi ut. Cupiditate qui, dicta in alias aut autem nesciunt! Tempora nam laborum sequi magni nihil!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur ducimus praesentium velit iste sequi ut. Cupiditate qui, dicta in alias aut autem nesciunt! Tempora nam laborum sequi magni nihil!
+        </div>
     </section>
 @endsection
