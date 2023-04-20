@@ -88,11 +88,74 @@ footer {
 
 
 
+// ============================================== Modals =============================================
+
+.notify {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px 20px 20px;
+    background-color: $yellow-opacity;
+    border-radius: 10px;
+    box-shadow: $header-shadow;
+    position: fixed;
+    top: 0;
+    right: 10px;
+    z-index: 997;
+    width: fit-content;
+    height: fit-content;
+    backdrop-filter: blur(10px);
+    max-width: 90%;
+    pointer-events: none;
+    opacity: 0;
+    transition: .3s;
+
+    &.active {
+        opacity: 1;
+        pointer-events: all;
+        top: 90px;
+        transition: .3s;
+    }
+
+    svg {
+        width: 24px;
+        height: 24px;
+        fill: $bg-block;
+        align-items: center;
+        margin-right: -10px;
+    }
+
+    .content {
+        display: block;
+        width: fit-content;
+        height: fit-content;
+        color: $bg-block;
+        font-family: $header-f;
+        font-size: $subtitle-mobile-s;
+        margin-left: 25px;
+        text-align: center;
+        line-height: normal;
+    }
+}
+
+
+
+
+
+
+
+
 // ============================================== Media =============================================
 
 @media screen and (max-width: 960px) {
     .main-block:first-child {
         padding-top: 100px;
+    }
+
+    .notify {
+        right: 50%;
+        transform: translateX(50%);
+        min-width: 90%;
     }
 }
 
@@ -107,5 +170,13 @@ footer {
 
     .title {
         font-size: $title-mobile-s;
+    }
+
+    .notify {
+        top: 0;
+
+        &.active {
+            top: 70px;
+        }
     }
 }
