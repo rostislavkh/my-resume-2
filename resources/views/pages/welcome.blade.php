@@ -20,7 +20,7 @@
                     </ul>
                     <p id="profession"></p>
                 </div>
-                <a href="#">Contact Me</a>
+                <a href="#contact-me">Contact Me</a>
             </div>
             <div class="titule__img">
                 <img src="./img/avatar.png" alt="avatar">
