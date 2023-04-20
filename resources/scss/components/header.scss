@@ -104,8 +104,8 @@ header {
     .search {
         display: flex;
         align-items: center;
-        gap: 20px;
         position: relative;
+        margin-right: 40px;
         
         input {
             background-color: $inp-bg;
@@ -115,7 +115,8 @@ header {
             border: none;
             border-radius: 10px;
             padding: 10px 35px 10px 10px;
-            width: 160px;
+            // width: 160px;
+            width: 300px;
             letter-spacing: $lsp;
             transition: .3s;
 
@@ -134,11 +135,170 @@ header {
 
         svg {
             position: absolute;
-            right: 60px;
+            right: 15px;
             top: 15px;
             width: 20px;
             fill: $txt-color-inact;
             pointer-events: none;
+        }
+    }
+}
+
+.search {
+    position: relative;
+
+    .lang {
+        position: absolute;
+        right: -50px;
+    }
+
+    .result-search {
+        position: absolute;
+        top: calc(100% + 100px);
+        opacity: 0;
+        pointer-events: none;
+
+        left: -8px;
+        width: calc(100% + 16px);
+        max-height: 400px;
+        height: 100vh;
+        background-color: $bg-block-2;
+        border-radius: 10px;
+        z-index: -1;
+        padding: 60px 15px 5px 15px;
+        box-shadow: $header-shadow;
+        transition: .3s;
+
+        &.active {
+            top: -8px;
+            opacity: 1;
+            pointer-events: all;
+            transition: .3s;
+        }
+    }
+
+    .list {
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding-right: 5px;
+
+        &::-webkit-scrollbar {
+            width: 2px;
+        }
+    
+        &::-webkit-scrollbar-thumb {
+            background-color: $yellow;
+        }
+    
+        &::-webkit-scrollbar-track {
+            background-color: $bg-header;
+            backdrop-filter: blur(10px);
+        }
+
+        max-height: 100%;
+
+        li:first-child {
+            padding-top: 0;
+        }
+
+        li:not(:not(.tag)) {
+            background-color: $bg-year;
+            border-radius: 5px;
+            transition: .3s;
+            margin-bottom: 5px;
+
+            a {
+                color: $txt-color;
+                display: block;
+                padding: 10px 10px;
+            }
+
+            &:hover {
+                background-color: $yellow;
+                transition: .3s;
+
+                a {
+                    color: $bg-block;
+                }
+            }
+        }
+
+        .label {
+            font-family: $header-f;
+            font-size: $subtitle-mobile-s;
+            font-weight: bold;
+            color: $txt-color;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        .proj a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            background-color: $bg-year;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+
+            img {
+                max-width: 60px;
+                height: auto;
+                transition: .3s;
+            }
+
+            .proj__info {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                .name {
+                    color: $txt-color;
+                    transition: .3s;
+                }
+
+                .desc {
+                    font-family: $header-f;
+                    font-size: $subtitle-mobile-2-s;
+                    color: $txt-color-inact;
+                    line-height: $lh-txt;
+                    max-height: 80px;
+                    overflow: hidden;
+                    transition: .3s;
+                }
+            }
+
+            &:hover {
+                background-color: $yellow;
+
+                img {
+                    box-shadow: $header-shadow;
+                    transition: .3s;
+                }
+
+                .desc, .name {
+                    color: $bg-block;
+                    transition: .3s;
+                }
+            }
+        }
+    }
+}
+
+.mobile-search {
+    input, svg {
+        z-index: 2;
+    }
+
+    .result-search-mobile {
+        z-index: 1;
+
+        max-height: calc(100vh - 80px);
+        height: calc(100vh - 90px);
+
+        &.active {
+            padding-top: 80px;
         }
     }
 }
@@ -289,6 +449,10 @@ header.small {
 
         .burger, .burger-btn {
             display: block;
+        }
+
+        .logo img {
+            width: 65px;
         }
     }
 }
