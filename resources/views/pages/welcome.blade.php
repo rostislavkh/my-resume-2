@@ -221,4 +221,15 @@
             </div>
         </div>
     </section>
+    <section class="container contact-me" id="contact-me">
+        <img src="./img/dots.png" alt="dots">
+        <h1 class="title">Contact Me</h1>
+        <form action="#" method="post">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Phone, Telegram or Viber" required>
+            <textarea name="text" rows="4" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
 @endsection

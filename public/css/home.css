@@ -391,6 +391,95 @@
   pointer-events: none;
 }
 
+.contact-me {
+  position: relative;
+  padding: 60px 0;
+}
+.contact-me img {
+  position: absolute;
+  left: 0;
+  top: -135px;
+  z-index: -1;
+}
+.contact-me form {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  width: 100%;
+  padding: 20px 0;
+}
+.contact-me form input:-webkit-autofill,
+.contact-me form input:-webkit-autofill:hover,
+.contact-me form input:-webkit-autofill:focus,
+.contact-me form textarea:-webkit-autofill,
+.contact-me form textarea:-webkit-autofill:hover,
+.contact-me form textarea:-webkit-autofill:focus,
+.contact-me form select:-webkit-autofill,
+.contact-me form select:-webkit-autofill:hover,
+.contact-me form select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #ffc86b;
+  -webkit-box-shadow: inset 0 0 0 50px #3d3e42;
+  -webkit-transition: 0;
+  transition: 0;
+}
+.contact-me form input, .contact-me form textarea {
+  background-color: #3d3e42;
+  border: 2px solid #3d3e42;
+  padding: 10px 20px;
+  font-family: "PTSans-Regular";
+  font-size: 22px;
+  color: #ffc86b;
+  outline: none;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+.contact-me form input::-moz-placeholder, .contact-me form textarea::-moz-placeholder {
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+}
+.contact-me form input::placeholder, .contact-me form textarea::placeholder {
+  transition: 0.3s;
+}
+.contact-me form input:active, .contact-me form input:focus, .contact-me form input:not(:invalid), .contact-me form textarea:active, .contact-me form textarea:focus, .contact-me form textarea:not(:invalid) {
+  border-color: #ffc86b;
+  transition: 0.3s;
+}
+.contact-me form input:active::-moz-placeholder, .contact-me form input:focus::-moz-placeholder, .contact-me form input:not(:invalid)::-moz-placeholder, .contact-me form textarea:active::-moz-placeholder, .contact-me form textarea:focus::-moz-placeholder, .contact-me form textarea:not(:invalid)::-moz-placeholder {
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+  color: #ffc86b;
+}
+.contact-me form input:active::placeholder, .contact-me form input:focus::placeholder, .contact-me form input:not(:invalid)::placeholder, .contact-me form textarea:active::placeholder, .contact-me form textarea:focus::placeholder, .contact-me form textarea:not(:invalid)::placeholder {
+  transition: 0.3s;
+  color: #ffc86b;
+}
+.contact-me form input, .contact-me form textarea, .contact-me form button {
+  width: 100%;
+  border-radius: 10px;
+}
+.contact-me form button {
+  display: block;
+  border: 4px solid #ffc86b;
+  padding: 10px 0;
+  border-radius: 10px;
+  background: none;
+  font-family: "PTSans-Regular";
+  font-size: 22px;
+  color: #ffc86b;
+  margin: auto;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact-me form button:hover {
+  background-color: #ffc86b;
+  color: #3d3e42;
+  transition: 0.3s;
+}
+
 @media screen and (max-width: 1350px) {
   .titule__img {
     margin-right: -20%;
@@ -449,6 +538,10 @@
   .portfolio__block {
     width: 280px;
     height: 280px;
+  }
+  .contact-me img {
+    left: -76px;
+    top: -217px;
   }
 }
 @media screen and (max-width: 625px) {
