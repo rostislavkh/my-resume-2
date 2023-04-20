@@ -480,6 +480,91 @@
   transition: 0.3s;
 }
 
+.my-contacts {
+  margin-top: 40px;
+  background-color: #3d3e42;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+.my-contacts .title {
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  margin-bottom: 5px;
+}
+.my-contacts .up, .my-contacts .down {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.my-contacts .up span, .my-contacts .down span {
+  background-color: #ffc86b;
+  height: 2px;
+  width: 100%;
+}
+.my-contacts .up {
+  transform: translateY(-50%);
+}
+.my-contacts .down {
+  transform: translateY(50%);
+}
+.my-contacts .social {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 -10px 0;
+  flex-direction: row;
+  width: 100%;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  right: auto;
+  position: unset;
+}
+.my-contacts .social::after, .my-contacts .social::before {
+  display: none;
+}
+.my-contacts .contacts {
+  margin: 40px auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+}
+.my-contacts .contacts__item {
+  max-width: 350px;
+  width: 100%;
+  background-color: #31333b;
+  padding: 20px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  transition: 0.3s;
+}
+.my-contacts .contacts__item svg {
+  fill: #eaeaea;
+  transition: 0.3s;
+}
+.my-contacts .contacts__item span {
+  color: #ffc86b;
+  font-family: "PTSans-Regular";
+  font-size: 24px;
+  transition: 0.3s;
+}
+.my-contacts .contacts__item:hover {
+  background-color: #ffc86b;
+  transition: 0.3s;
+}
+.my-contacts .contacts__item:hover span {
+  color: #34353a;
+}
+.my-contacts .contacts__item:hover svg {
+  fill: #34353a;
+}
+
 @media screen and (max-width: 1350px) {
   .titule__img {
     margin-right: -20%;
@@ -637,6 +722,11 @@
     height: 220px;
   }
 }
+@media screen and (max-width: 360px) {
+  .my-contacts .contacts__item span {
+    font-size: 18px;
+  }
+}
 @media screen and (max-width: 320px) {
   .skills__block {
     height: 250px;
@@ -649,5 +739,8 @@
   }
   .portfolio__block {
     height: 180px;
+  }
+  .my-contacts .contacts__item span {
+    font-size: 14px;
   }
 }

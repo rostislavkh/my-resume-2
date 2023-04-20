@@ -536,6 +536,129 @@
 
 
 
+// ============================================== My contact =============================================
+
+.my-contacts {
+    margin-top: 40px;
+    background-color: $bg-block-2;
+    box-shadow: $tile-shadow;
+    box-sizing: border-box;
+
+    .title {
+        min-width: fit-content;
+        margin-bottom: 5px;
+    }
+
+    .up, .down {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+
+        span {
+            background-color: $yellow;
+            height: 2px;
+            width: 100%;
+        }
+    }
+
+    .up {
+        transform: translateY(-50%);
+    }
+
+    .down {
+        transform: translateY(50%);
+    }
+
+    // .title, .social {
+    //     position: relative;
+
+    //     &::before {
+    //         position: absolute;
+    //         content: "";
+    //         background-color: $yellow;
+    //         height: 2px;
+    //         width: 37%;
+    //         left: 0;
+    //         top: calc(50% - 1px);
+    //     }
+    //     &::after {
+    //         position: absolute;
+    //         content: "";
+    //         background-color: $yellow;
+    //         height: 2px;
+    //         width: 37%;
+    //         right: 0;
+    //         top: calc(50% - 1px);
+    //     }
+    // }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 -10px 0;
+        flex-direction: row;
+        width: 100%;
+        max-width: fit-content;
+        right: auto;
+        position: unset;
+
+        &::after, &::before {
+            display: none;
+        }
+    }
+
+    .contacts {
+        margin: 40px auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 10px 20px;
+
+
+        &__item {
+            max-width: 350px;
+            width: 100%;
+            background-color: $bg;
+            padding: 20px 20px;
+            border-radius: 10px;
+            box-shadow: $tile-shadow;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 15px;
+            transition: .3s;
+
+            svg  {
+                fill: $txt-color;
+                transition: .3s;
+            }
+
+            span {
+                color: $yellow;
+                font-family: $header-f;
+                font-size: $subtitle-mobile-s;
+                transition: .3s;
+            }
+
+            &:hover {
+                background-color: $yellow;
+                transition: .3s;
+
+                span {
+                    color: $bg-block;
+                }
+
+                svg {
+                    fill: $bg-block;
+                }
+            }
+        }
+    }
+}
+
 
 
 // ============================================== Media =============================================
@@ -745,6 +868,12 @@
     }
 }
 
+@media screen and (max-width: 360px) {
+    .my-contacts .contacts__item span {
+        font-size: $subtitle-mobile-2-s;
+    }
+}
+
 @media screen and (max-width: 320px) {
     .skills {
         &__block {
@@ -766,5 +895,9 @@
         &__block {
             height: 180px;
         }
+    }
+
+    .my-contacts .contacts__item span {
+        font-size: $subtitle-mobile-3-s;
     }
 }
