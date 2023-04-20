@@ -565,6 +565,13 @@
   fill: #34353a;
 }
 
+footer {
+  margin-top: 0;
+  border: none;
+  box-shadow: none;
+  padding: 60px 20px;
+}
+
 @media screen and (max-width: 1350px) {
   .titule__img {
     margin-right: -20%;

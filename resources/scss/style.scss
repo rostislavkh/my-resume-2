@@ -53,7 +53,36 @@ body {
     color: $txt-color;
 }
 
+footer {
+    width: 100%;
+    padding: 20px 20px;
+    border-top: 2px solid $yellow;
+    margin-top: 40px;
+    box-shadow: $tile-shadow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: $subtitle-mobile-2-s;
+    font-family: $header-f;
+    color: $yellow;
+    gap: 5px;
 
+    a {
+        padding: 10px 0;
+        border-radius: 10px;
+        color: $yellow;
+        font-weight: bold;
+        transition: .3s;
+
+        &:hover {
+            padding: 10px 20px;
+            color: $bg-block;
+            background-color: $yellow;
+            transition: .3s;
+        }
+    }
+}
 
 
 

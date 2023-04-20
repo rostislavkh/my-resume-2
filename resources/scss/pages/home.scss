@@ -570,29 +570,6 @@
         transform: translateY(50%);
     }
 
-    // .title, .social {
-    //     position: relative;
-
-    //     &::before {
-    //         position: absolute;
-    //         content: "";
-    //         background-color: $yellow;
-    //         height: 2px;
-    //         width: 37%;
-    //         left: 0;
-    //         top: calc(50% - 1px);
-    //     }
-    //     &::after {
-    //         position: absolute;
-    //         content: "";
-    //         background-color: $yellow;
-    //         height: 2px;
-    //         width: 37%;
-    //         right: 0;
-    //         top: calc(50% - 1px);
-    //     }
-    // }
-
     .social {
         display: flex;
         justify-content: center;
@@ -657,6 +634,13 @@
             }
         }
     }
+}
+
+footer {
+    margin-top: 0;
+    border: none;
+    box-shadow: none;
+    padding: 60px 20px;
 }
 
 

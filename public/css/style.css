@@ -67,6 +67,35 @@ body::-webkit-scrollbar-track {
   color: #eaeaea;
 }
 
+footer {
+  width: 100%;
+  padding: 20px 20px;
+  border-top: 2px solid #ffc86b;
+  margin-top: 40px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 18px;
+  font-family: "PTSans-Regular";
+  color: #ffc86b;
+  gap: 5px;
+}
+footer a {
+  padding: 10px 0;
+  border-radius: 10px;
+  color: #ffc86b;
+  font-weight: bold;
+  transition: 0.3s;
+}
+footer a:hover {
+  padding: 10px 20px;
+  color: #34353a;
+  background-color: #ffc86b;
+  transition: 0.3s;
+}
+
 @media screen and (max-width: 960px) {
   .main-block:first-child {
     padding-top: 100px;
