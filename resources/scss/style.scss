@@ -128,23 +128,21 @@ footer {
         display: flex;
 
         .bg-line {
-            width: 20%;
-            background-color: $bg-block;
+            width: 25%;
+            background: $bg-block-2;
             height: 100vh;
             transition: .3s;
+            border-radius: 0;
         }
 
         .bg-line:nth-child(2) {
-            transition-delay: .15s;
+            transition-delay: .06s;
         }
         .bg-line:nth-child(3) {
-            transition-delay: .3s;
+            transition-delay: .12s;
         }
         .bg-line:nth-child(4) {
-            transition-delay: .45s;
-        }
-        .bg-line:nth-child(5) {
-            transition-delay: .6s;
+            transition-delay: .18s;
         }
     }
 
@@ -154,22 +152,21 @@ footer {
 
         .preloader-bg {
             .bg-line {
+                box-shadow: $header-shadow;
+                border-radius: 0 0 10px 0;
                 height: 0;
                 transition: .3s;
-                transition-delay: .75s;
+                transition-delay: .24s;
             }
 
-            .bg-line:nth-child(5) {
-                transition-delay: .15s;
-            }
             .bg-line:nth-child(4) {
-                transition-delay: .3s;
+                transition-delay: .06s;
             }
             .bg-line:nth-child(3) {
-                transition-delay: .45s;
+                transition-delay: .12s;
             }
             .bg-line:nth-child(2) {
-                transition-delay: .6s;
+                transition-delay: .18s;
             }
         }
     }

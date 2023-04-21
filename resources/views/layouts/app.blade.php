@@ -11,11 +11,10 @@
         <link rel="stylesheet" href="{{ mix('css/header.css') }}">
         @yield('styles')
     </head>
-    <body>
+    <body class="oh">
         {{-- loaded --}}
-        <div class="preloader">
+        <div class="preloader" id="preloader">
             <div class="preloader-bg">
-                <div class="bg-line"></div>
                 <div class="bg-line"></div>
                 <div class="bg-line"></div>
                 <div class="bg-line"></div>
@@ -28,15 +27,15 @@
                     <div class="line line-2"></div>
                     <div class="line line-3"></div>
                 </div>
-                {{-- <div class="loading-text">Завантаження</div> --}}
+                <div class="loading-text">Завантаження</div>
             </div>
         </div>
         <header>
             <a href="/" class="logo"><img src="./img/logo.png" alt="logo"></a>
             <ul class="links">
-                <li><a href="{{ route('home') }}#about-me">About me</a></li>
-                <li><a href="{{ route('home') }}#portfolio">Portfolio</a></li>
-                <li><a href="{{ route('home') }}#contact-me">Contact</a></li>
+                <li><a class="no-load" href="{{ route('home') }}#about-me">About me</a></li>
+                <li><a class="no-load" href="{{ route('home') }}#portfolio">Portfolio</a></li>
+                <li><a class="no-load" href="{{ route('home') }}#contact-me">Contact</a></li>
             </ul>
             <form class="search" action="/search" method="get">
                 <input type="text" placeholder="Search" autocomplete="off" required>
@@ -135,9 +134,9 @@
                 </div>
             </form>
             <ul class="links">
-                <li><a href="{{ route('home') }}#about-me">About me</a></li>
-                <li><a href="{{ route('home') }}#portfolio">Portfolio</a></li>
-                <li><a href="{{ route('home') }}#contact-me">Contact</a></li>
+                <li><a class="no-load" href="{{ route('home') }}#about-me">About me</a></li>
+                <li><a class="no-load" href="{{ route('home') }}#portfolio">Portfolio</a></li>
+                <li><a class="no-load" href="{{ route('home') }}#contact-me">Contact</a></li>
             </ul>
             <div class="lang">
                 Language: <a href="#">UK</a> | <a class="active" href="#">EN</a>

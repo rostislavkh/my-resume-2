@@ -38,8 +38,14 @@ function scrollspy() {
   });
 }
 $(window).on('load', function () {
+  document.querySelector('body').classList.toggle('oh');
+  document.getElementById('preloader').classList.toggle('loaded');
   liveHeader();
   scrollspy();
+});
+$(window).on('beforeunload', function () {
+  document.querySelector('body').classList.toggle('oh');
+  document.getElementById('preloader').classList.toggle('loaded');
 });
 $(window).scroll(function () {
   liveHeader();
