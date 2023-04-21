@@ -23,7 +23,7 @@
                         Numquam molestiae commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum
                         pariatur consequuntur porro non magnam autem, placeat dolores mollitia asperiores dignissimos
                         illum.</span>
-                    <a href="#">See More -></a>
+                    <a href="{{ route('project') }}">See More -></a>
                 </div>
             </div>
             <div class="portfolio__block">

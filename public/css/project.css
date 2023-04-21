@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "PTSans-Regular";
+  src: url("/fonts/PTSans-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "RobotoMono-Regular";
+  src: url("/fonts/RobotoMono-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Merriweather-Bold";
+  src: url("/fonts/Merriweather-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+.titule {
+  background-color: #34353a;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  padding: 60px 20px;
+}
+.titule .main-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  perspective: 1000px;
+}
+.titule .main-block img {
+  border-radius: 10px;
+  height: 80%;
+  perspective: 300px;
+  transform: rotateY(325deg);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.titule .main-block img:hover {
+  transform: rotateY(350deg) scale(1.1);
+  box-shadow: 0px 0px 30px 0px rgba(255, 201, 107, 0.4588235294);
+  transition: 0.3s;
+}
+.titule .main-block .info {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.titule .main-block .info .title {
+  color: #ffc86b;
+  text-align: start;
+  margin: 20px 0;
+}
+.titule .main-block .info .short-desc {
+  font-size: 18px;
+  font-family: "RobotoMono-Regular";
+  line-height: 25px;
+  min-width: 500px;
+}
+
+@media screen and (max-width: 1200px) {
+  .titule {
+    padding-top: 120px;
+  }
+  .titule .main-block {
+    height: auto;
+  }
+  .titule .main-block img {
+    cursor: unset;
+    transform: none;
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }
+  .titule .main-block img:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  .titule .main-block {
+    flex-direction: column-reverse;
+  }
+  .titule .main-block .titule .main-block .info {
+    justify-content: center;
+  }
+  .titule .main-block .info .short-desc {
+    min-width: auto;
+  }
+}
+@media screen and (max-width: 961px) {
+  .titule {
+    padding-top: 0;
+  }
+}

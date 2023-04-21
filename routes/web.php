@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/more-projects', function () {
     return view('pages.more-projects');
 })->name('more-projects');
+
+Route::get('/project', function () {
+    return view('pages.project');
+})->name('project');

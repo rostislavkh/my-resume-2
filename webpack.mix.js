@@ -23,10 +23,11 @@ mix.sass('resources/scss/components/header.scss', 'css');
 // pages
 mix.sass('resources/scss/pages/home.scss', 'css');
 mix.sass('resources/scss/pages/more-projects.scss', 'css');
+mix.sass('resources/scss/pages/project.scss', 'css');
 
-// lib
+// libs
 // mix.styles([
-//     'resources/scss/libs/slick.css',
+//     'resources/css/libs/lightbox.css',
 // ], 'public/css/all-lib.css');
 
 mix.setPublicPath('public')

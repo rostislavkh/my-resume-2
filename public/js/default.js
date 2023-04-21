@@ -74,6 +74,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/scss/pages/project.scss":
+/*!*******************************************!*\
+  !*** ./resources/scss/pages/project.scss ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/scss/reset.scss":
 /*!***********************************!*\
   !*** ./resources/scss/reset.scss ***!
@@ -231,6 +244,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			"css/fonts": 0,
 /******/ 			"css/style": 0,
 /******/ 			"css/reset": 0,
+/******/ 			"css/project": 0,
 /******/ 			"css/more-projects": 0,
 /******/ 			"css/home": 0
 /******/ 		};
@@ -282,14 +296,15 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/header","css/variables","css/fonts","css/style","css/reset","css/more-projects","css/home"], () => (__webpack_require__("./resources/js/default.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/header","css/variables","css/fonts","css/style","css/reset","css/more-projects","css/home"], () => (__webpack_require__("./resources/scss/reset.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/header","css/variables","css/fonts","css/style","css/reset","css/more-projects","css/home"], () => (__webpack_require__("./resources/scss/style.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/header","css/variables","css/fonts","css/style","css/reset","css/more-projects","css/home"], () => (__webpack_require__("./resources/scss/fonts.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/header","css/variables","css/fonts","css/style","css/reset","css/more-projects","css/home"], () => (__webpack_require__("./resources/scss/variables.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/header","css/variables","css/fonts","css/style","css/reset","css/more-projects","css/home"], () => (__webpack_require__("./resources/scss/components/header.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/header","css/variables","css/fonts","css/style","css/reset","css/more-projects","css/home"], () => (__webpack_require__("./resources/scss/pages/home.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/header","css/variables","css/fonts","css/style","css/reset","css/more-projects","css/home"], () => (__webpack_require__("./resources/scss/pages/more-projects.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/header","css/variables","css/fonts","css/style","css/reset","css/project","css/more-projects","css/home"], () => (__webpack_require__("./resources/js/default.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/header","css/variables","css/fonts","css/style","css/reset","css/project","css/more-projects","css/home"], () => (__webpack_require__("./resources/scss/reset.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/header","css/variables","css/fonts","css/style","css/reset","css/project","css/more-projects","css/home"], () => (__webpack_require__("./resources/scss/style.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/header","css/variables","css/fonts","css/style","css/reset","css/project","css/more-projects","css/home"], () => (__webpack_require__("./resources/scss/fonts.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/header","css/variables","css/fonts","css/style","css/reset","css/project","css/more-projects","css/home"], () => (__webpack_require__("./resources/scss/variables.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/header","css/variables","css/fonts","css/style","css/reset","css/project","css/more-projects","css/home"], () => (__webpack_require__("./resources/scss/components/header.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/header","css/variables","css/fonts","css/style","css/reset","css/project","css/more-projects","css/home"], () => (__webpack_require__("./resources/scss/pages/home.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/header","css/variables","css/fonts","css/style","css/reset","css/project","css/more-projects","css/home"], () => (__webpack_require__("./resources/scss/pages/more-projects.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/header","css/variables","css/fonts","css/style","css/reset","css/project","css/more-projects","css/home"], () => (__webpack_require__("./resources/scss/pages/project.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

@@ -1,0 +1,108 @@
+@import '../variables.scss';
+
+.titule {
+    background-color: $bg-block;
+    box-shadow: $tile-shadow;
+    padding: 60px 20px;
+
+    .main-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        perspective: 1000px;
+
+        img {
+            border-radius: 10px;
+            height: 80%;
+            perspective: 300px;
+            transform: rotateY(325deg);
+            cursor: pointer;
+            transition: .3s;
+
+            &:hover {
+                transform: rotateY(350deg) scale(1.1);
+                box-shadow: $yellow-ultra-shadow;
+                transition: .3s;
+            }
+        }
+
+        .info {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+
+            .title {
+                color: $yellow;
+                text-align: start;
+                margin: 20px 0;
+            }
+
+            .short-desc {
+                font-size: $subtitle-mobile-2-s;
+                font-family: $txt-f;
+                line-height: $lh-txt;
+                min-width: 500px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ============================================== Media =============================================
+
+@media screen and (max-width: 1200px) {
+    .titule {
+        padding-top: 120px;
+    }
+
+    .titule .main-block {
+        height: auto;
+    }
+
+    .titule .main-block img {
+        cursor: unset;
+        transform: none;
+        max-height: 100%;
+        max-width: 100%;
+        height: auto;
+        width: auto;
+
+        &:hover {
+            transform: none;
+            box-shadow: none;
+        }
+    }
+
+    .titule .main-block {
+        flex-direction: column-reverse;
+        .titule .main-block .info {
+            justify-content: center;
+        }
+    }
+
+    .titule .main-block .info .short-desc {
+        min-width: auto;
+    }
+}
+
+@media screen and (max-width: 961px) {
+    .titule {
+        padding-top: 0;
+    }
+}
