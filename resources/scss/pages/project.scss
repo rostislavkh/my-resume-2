@@ -178,6 +178,34 @@
 
 
 
+
+
+
+// ============================================== Images =============================================
+
+.images {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+
+    .title {
+        margin-bottom: -30px;
+    }
+
+    a img {
+        border-radius: 10px;
+        width: 100%;
+        box-shadow: $tile-shadow;
+    }
+}
+
+
+
+
+
 // ============================================== Media =============================================
 
 @media screen and (max-width: 1200px) {

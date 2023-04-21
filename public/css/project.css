@@ -153,6 +153,23 @@
   transform: translateY(50%);
 }
 
+.images {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+}
+.images .title {
+  margin-bottom: -30px;
+}
+.images a img {
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
 @media screen and (max-width: 1200px) {
   .titule {
     padding-top: 120px;

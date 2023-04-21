@@ -49,4 +49,21 @@
     </div>
     <img src="./img/dots.png" alt="dots" class="desc__dots">
 </section>
+<section class="container">
+    <div class="images">
+        <h1 class="title">Images</h1>
+        <a href="./img/works/proj.webp" data-lightbox="./img/works/proj.webp">
+            <img src="./img/works/proj.webp" alt="img">
+        </a>
+        <a href="./img/works/proj.webp" data-lightbox="./img/works/prfgjoj.webp">
+            <img src="./img/works/proj.webp" alt="img">
+        </a>
+        <a href="./img/works/proj.webp" data-lightbox="./img/works/profghjj.webp">
+            <img src="./img/works/proj.webp" alt="img">
+        </a>
+        <a href="./img/works/proj.webp" data-lightbox="./img/works/proghjj.webp">
+            <img src="./img/works/proj.webp" alt="img">
+        </a>
+    </div>
+</section>
 @endsection
