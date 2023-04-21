@@ -186,7 +186,7 @@
                 </div>
             </div>
         </div>
-        <a class="more-projects" href="#">View More</a>
+        <a class="more-projects" href="{{ route('more-projects') }}">View More</a>
         <div class="experience">
             <div class="experience__content container">
                 <h1 class="title">Experience</h1>

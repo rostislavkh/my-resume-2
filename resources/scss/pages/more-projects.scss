@@ -1,0 +1,236 @@
+@import '../variables.scss';
+
+.portfolio {
+    padding-top: 140px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    &__block {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        overflow: hidden;
+        transition: .3s;
+
+        &:hover img {
+            transform: scale(1.05);
+            transition: .3s;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: .3s;
+        }
+
+        div {
+            width: 100%;
+            height: 100%;
+            background-color: $bg-header;
+            backdrop-filter: blur(8px);
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            top: 0;
+            left: 0;
+            padding: 10px;
+            opacity: 0;
+            transition: .3s;
+
+            .work__title {
+                font-family: $txt-f;
+                font-size: $subtitle-s;
+                letter-spacing: $lsp-txt;
+            }
+
+            .work__text {
+                text-align: center;
+                height: fit-content;
+                display: block;
+                max-width: 400px;
+                -webkit-line-clamp: 3;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-family: $txt-f;
+                font-size: $subtitle-mobile-3-s;
+                line-height: $lh-txt;
+            }
+
+            a {
+                font-family: $txt-f;
+                font-size: $subtitle-mobile-3-s;
+                line-height: $lh-txt;
+                color: $bg-block-2;
+                background-color: $yellow;
+                border-radius: 10px;
+                padding: 5px 20px;
+                font-weight: bold;
+                transition: .3s;
+
+                &:hover {
+                    box-shadow: $yellow-shadow;
+                    padding: 10px 40px;
+                    transition: .3s;
+                }
+            }
+
+            &:hover {
+                opacity: 1;
+                transition: .3s;
+            }
+        }
+    }
+}
+
+.more-projects {
+    display: block;
+    width: fit-content;
+    font-family: $txt-f;
+    font-size: $subtitle-mobile-2-s;
+    line-height: $lh-txt;
+    color: $bg-block-2;
+    background-color: $yellow;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-weight: bold;
+    margin: 40px auto;
+    transition: .3s;
+
+    &:hover {
+        box-shadow: $yellow-shadow;
+        transform: scale(1.05);
+        transition: .3s;
+    }
+}
+
+.pagination {
+    margin-top: 40px;
+
+    ul li {
+        font-family: $header-f;
+        font-size: $subtitle-mobile-s;
+        color: $yellow;
+
+        a {
+            border: 2px solid $yellow;
+            border-radius: 5px;
+            padding: 5px 10px;
+            display: block;
+            color: $yellow;
+            transition: .3s;
+
+            svg line {
+                stroke: $yellow;
+                transition: .3s;
+            }
+
+            &:hover {
+                background-color: $yellow;
+                color: $bg-block;
+                box-shadow: $tile-shadow;
+                transition: .3s;
+
+                svg line {
+                    stroke: $bg-block;
+                    transition: .3s;
+                }
+            }
+        }
+
+        svg, a svg {
+            height: 18px;
+            width: 18px;
+        }
+
+        svg line {
+            stroke: $yellow;
+        }
+
+        &.disable {
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: 2px solid $yellow;
+            background-color: $yellow;
+            color: $bg-block;
+            box-shadow: $tile-shadow;
+
+            svg line {
+                stroke: $bg-block;
+            }
+        }
+    }
+}
+
+.pagination, .pagination ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ============================================== Media =============================================
+
+@media screen and (max-width: 950px) {
+    .portfolio {
+        &__block {
+            width: 320px;
+            height: 320px;
+        }
+    }
+}
+
+@media screen and (max-width: 734px) {
+    .portfolio {
+        &__block {
+            width: 280px;
+            height: 280px;
+        }
+    }
+}
+
+@media screen and (max-width: 466px) {
+    .portfolio {
+        &__block {
+            width: 100%;
+            height: 400px;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .portfolio {
+        &__block {
+            height: 220px;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .portfolio {
+        &__block {
+            height: 180px;
+        }
+    }
+}

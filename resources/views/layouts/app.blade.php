@@ -15,9 +15,9 @@
         <header>
             <a href="/" class="logo"><img src="./img/logo.png" alt="logo"></a>
             <ul class="links">
-                <li><a href="#about-me">About me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact-me">Contact</a></li>
+                <li><a href="{{ route('home') }}#about-me">About me</a></li>
+                <li><a href="{{ route('home') }}#portfolio">Portfolio</a></li>
+                <li><a href="{{ route('home') }}#contact-me">Contact</a></li>
             </ul>
             <form class="search" action="/search" method="get">
                 <input type="text" placeholder="Search" autocomplete="off" required>
@@ -116,9 +116,9 @@
                 </div>
             </form>
             <ul class="links">
-                <li><a href="#about-me">About me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact-me">Contact</a></li>
+                <li><a href="{{ route('home') }}#about-me">About me</a></li>
+                <li><a href="{{ route('home') }}#portfolio">Portfolio</a></li>
+                <li><a href="{{ route('home') }}#contact-me">Contact</a></li>
             </ul>
             <div class="lang">
                 Language: <a href="#">UK</a> | <a class="active" href="#">EN</a>

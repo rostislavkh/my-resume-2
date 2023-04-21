@@ -22,6 +22,7 @@ mix.sass('resources/scss/components/header.scss', 'css');
 
 // pages
 mix.sass('resources/scss/pages/home.scss', 'css');
+mix.sass('resources/scss/pages/more-projects.scss', 'css');
 
 // lib
 // mix.styles([
