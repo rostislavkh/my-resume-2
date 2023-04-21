@@ -73,6 +73,10 @@
         flex-wrap: wrap;
         width: 100%;
 
+        li {
+            margin-bottom: 25px;
+        }
+
         li a {
             background-color: $bg-year;
             color: $txt-color;
@@ -102,6 +106,7 @@
     }
 
     .dots {
+        pointer-events: none;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -115,6 +120,61 @@
 
 
 
+// ============================================== Description =============================================
+
+.description {
+    color: $txt-color;
+    font-family: $header-f;
+    font-size: $header-s;
+    line-height: $lh-txt;
+    padding: 60px 20px;
+    margin-top: 40px;
+
+    .title {
+        margin-bottom: 40px;
+    }
+
+    b {
+        color: $yellow;
+    }
+
+    p, ul {
+        padding-bottom: 20px;
+    }
+
+    ul {
+        li {
+            margin-left: 40px;
+            margin-bottom: 5px;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                background-color: $yellow;
+                height: 2px;
+                width: 20px;
+                left: 0;
+                top: calc(50% - 1px);
+                transform: translateX(calc(-50% - 20px));
+            }
+        }
+    }
+}
+
+.desc {
+    box-shadow: $tile-shadow;
+    position: relative;
+
+    &__dots {
+        pointer-events: none;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        transform: translateY(50%);
+    }
+}
 
 
 

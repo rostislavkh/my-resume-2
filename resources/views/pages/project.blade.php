@@ -22,13 +22,31 @@
     <h1 class="title">Tags</h1>
     <ul class="tag-list">
         <li><a href="#"><span>#</span>php</a></li>
-        <li><a href="#">#yii2</a></li>
-        <li><a href="#">#gulp</a></li>
-        <li><a href="#">#git</a></li>
-        <li><a href="#">#html&css</a></li>
-        <li><a href="#">#js</a></li>
-        <li><a href="#">#jquery</a></li>
+        <li><a href="#"><span>#</span>yii2</a></li>
+        <li><a href="#"><span>#</span>gulp</a></li>
+        <li><a href="#"><span>#</span>git</a></li>
+        <li><a href="#"><span>#</span>html&css</a></li>
+        <li><a href="#"><span>#</span>js</a></li>
+        <li><a href="#"><span>#</span>jquery</a></li>
     </ul>
     <img class="dots" src="./img/dots.png" alt="dots">
+</section>
+<section class="desc bg">
+    <div class="container description">
+        <h1 class="title">Description</h1>
+        <p>Lorem ipsum dolor sit amet <b>consectetur</b> adipisicing elit. Illo eligendi excepturi dolorem eveniet adipisci assumenda quae, enim non tenetur commodi nobis culpa nemo repellat et, at alias aperiam, distinctio modi.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eligendi excepturi dolorem eveniet adipisci assumenda quae, enim non tenetur commodi nobis culpa nemo repellat et, at alias aperiam, distinctio modi.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eligendi excepturi dolorem eveniet adipisci assumenda quae, enim non tenetur commodi nobis culpa nemo repellat et, at alias aperiam, distinctio modi.</p>
+        <p>Lorem ipsum dolor sit amet <b>consectetur</b> adipisicing elit. Illo eligendi excepturi dolorem eveniet adipisci assumenda quae, enim non tenetur commodi nobis culpa nemo repellat et, at alias aperiam, distinctio modi.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eligendi excepturi dolorem eveniet adipisci assumenda quae, enim non tenetur commodi nobis culpa nemo repellat et, at alias aperiam, distinctio modi.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eligendi excepturi dolorem eveniet adipisci assumenda quae, enim non tenetur commodi nobis culpa nemo repellat et, at alias aperiam, distinctio modi.</p>
+        <ul>
+            <li>Test</li>
+            <li>T123</li>
+            <li>Tegge5ft</li>
+            <li>Test3fkt4fb </li>
+        </ul>
+    </div>
+    <img src="./img/dots.png" alt="dots" class="desc__dots">
 </section>
 @endsection

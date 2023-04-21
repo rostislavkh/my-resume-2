@@ -37,6 +37,10 @@ main {
     overflow: hidden;
 }
 
+.bg {
+    background-color: $bg-block;
+}
+
 .container {
     width: 90%;
     max-width: 1400px;
