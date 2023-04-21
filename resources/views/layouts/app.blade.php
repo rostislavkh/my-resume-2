@@ -11,7 +11,25 @@
         <link rel="stylesheet" href="{{ mix('css/header.css') }}">
         @yield('styles')
     </head>
-    <body>
+    <body class="oh">
+        <div class="preloader load">
+            <div class="preloader-bg">
+                <div class="bg-line"></div>
+                <div class="bg-line"></div>
+                <div class="bg-line"></div>
+                <div class="bg-line"></div>
+                <div class="bg-line"></div>
+            </div>
+
+            <div class="preload">
+                <div class="lines">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+                {{-- <div class="loading-text">Завантаження</div> --}}
+            </div>
+        </div>
         <header>
             <a href="/" class="logo"><img src="./img/logo.png" alt="logo"></a>
             <ul class="links">

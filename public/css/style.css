@@ -119,6 +119,155 @@ footer a:hover {
   transition: 0.3s;
 }
 
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1500;
+  transition: 0.3s;
+}
+.preloader .preloader-bg {
+  display: flex;
+}
+.preloader .preloader-bg .bg-line {
+  width: 20%;
+  height: 0;
+  background-color: #34353a;
+  transition: 0.3s;
+}
+.preloader.load {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.3s;
+}
+.preloader.load .preloader-bg .bg-line {
+  height: 100vh;
+  transition: 0.3s;
+}
+.preloader.load .preloader-bg .bg-line:nth-child(2) {
+  transition-delay: 0.15s;
+}
+.preloader.load .preloader-bg .bg-line:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.preloader.load .preloader-bg .bg-line:nth-child(4) {
+  transition-delay: 0.45s;
+}
+.preloader.load .preloader-bg .bg-line:nth-child(5) {
+  transition-delay: 0.6s;
+}
+.preloader.stop {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.3s;
+}
+.preloader.stop .preloader-bg .bg-line {
+  height: 0;
+  transition: 0.3s;
+  transition-delay: 0.75s;
+}
+.preloader.stop .preloader-bg .bg-line:nth-child(5) {
+  transition-delay: 0.15s;
+}
+.preloader.stop .preloader-bg .bg-line:nth-child(4) {
+  transition-delay: 0.3s;
+}
+.preloader.stop .preloader-bg .bg-line:nth-child(3) {
+  transition-delay: 0.45s;
+}
+.preloader.stop .preloader-bg .bg-line:nth-child(2) {
+  transition-delay: 0.6s;
+}
+.preloader .preload {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 90px;
+  opacity: 0;
+  transition: 0.3s;
+}
+.preloader .preload .lines {
+  transition: 0.3s;
+  width: 80px;
+  height: 55px;
+}
+.preloader .preload .lines .line {
+  width: 80px;
+  height: 15px;
+  background-color: #ffc86b;
+  position: absolute;
+  transition: 0.3s;
+  clip: rect(0, 0, 20px, 0);
+}
+.preloader .preload .lines .line.line-1 {
+  top: 0;
+  animation: slide 2s ease 0s infinite;
+}
+.preloader .preload .lines .line.line-2 {
+  top: 20px;
+  animation: slide 2s ease 0.25s infinite;
+}
+.preloader .preload .lines .line.line-3 {
+  top: 40px;
+  animation: slide 2s ease 0.5s infinite;
+}
+.preloader .preload .loading-text {
+  color: #ffc86b;
+  font-size: 22px;
+  font-family: "PTSans-Regular";
+  animation: fade 1s ease 0s infinite;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.preloader.load .preload {
+  transition: 0.3s;
+  opacity: 1;
+  transition-delay: 1s;
+}
+.preloader.stop .preload {
+  transition: 0.3s;
+  opacity: 0;
+}
+
+@keyframes slide {
+  0% {
+    clip: rect(0, 0, 20px, 0);
+  }
+  30% {
+    clip: rect(0, 80px, 20px, 0);
+  }
+  50% {
+    clip: rect(0, 80px, 20px, 0);
+  }
+  80% {
+    clip: rect(0, 80px, 20px, 80px);
+  }
+  100% {
+    clip: rect(0, 80px, 20px, 80px);
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .notify {
   display: flex;
   justify-content: center;
