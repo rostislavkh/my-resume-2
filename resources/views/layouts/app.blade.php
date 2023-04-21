@@ -11,8 +11,9 @@
         <link rel="stylesheet" href="{{ mix('css/header.css') }}">
         @yield('styles')
     </head>
-    <body class="oh">
-        <div class="preloader load">
+    <body>
+        {{-- loaded --}}
+        <div class="preloader">
             <div class="preloader-bg">
                 <div class="bg-line"></div>
                 <div class="bg-line"></div>

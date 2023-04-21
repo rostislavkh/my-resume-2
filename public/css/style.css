@@ -125,9 +125,9 @@ footer a:hover {
   left: 0;
   width: 100vw;
   height: 100vw;
-  opacity: 0;
-  pointer-events: none;
   z-index: 1500;
+  opacity: 1;
+  pointer-events: none;
   transition: 0.3s;
 }
 .preloader .preloader-bg {
@@ -135,51 +135,41 @@ footer a:hover {
 }
 .preloader .preloader-bg .bg-line {
   width: 20%;
-  height: 0;
   background-color: #34353a;
-  transition: 0.3s;
-}
-.preloader.load {
-  opacity: 1;
-  pointer-events: all;
-  transition: 0.3s;
-}
-.preloader.load .preloader-bg .bg-line {
   height: 100vh;
   transition: 0.3s;
 }
-.preloader.load .preloader-bg .bg-line:nth-child(2) {
+.preloader .preloader-bg .bg-line:nth-child(2) {
   transition-delay: 0.15s;
 }
-.preloader.load .preloader-bg .bg-line:nth-child(3) {
+.preloader .preloader-bg .bg-line:nth-child(3) {
   transition-delay: 0.3s;
 }
-.preloader.load .preloader-bg .bg-line:nth-child(4) {
+.preloader .preloader-bg .bg-line:nth-child(4) {
   transition-delay: 0.45s;
 }
-.preloader.load .preloader-bg .bg-line:nth-child(5) {
+.preloader .preloader-bg .bg-line:nth-child(5) {
   transition-delay: 0.6s;
 }
-.preloader.stop {
+.preloader.loaded {
   opacity: 1;
-  pointer-events: all;
   transition: 0.3s;
 }
-.preloader.stop .preloader-bg .bg-line {
+.preloader.loaded .preloader-bg .bg-line {
   height: 0;
   transition: 0.3s;
   transition-delay: 0.75s;
 }
-.preloader.stop .preloader-bg .bg-line:nth-child(5) {
+.preloader.loaded .preloader-bg .bg-line:nth-child(5) {
   transition-delay: 0.15s;
 }
-.preloader.stop .preloader-bg .bg-line:nth-child(4) {
+.preloader.loaded .preloader-bg .bg-line:nth-child(4) {
   transition-delay: 0.3s;
 }
-.preloader.stop .preloader-bg .bg-line:nth-child(3) {
+.preloader.loaded .preloader-bg .bg-line:nth-child(3) {
   transition-delay: 0.45s;
 }
-.preloader.stop .preloader-bg .bg-line:nth-child(2) {
+.preloader.loaded .preloader-bg .bg-line:nth-child(2) {
   transition-delay: 0.6s;
 }
 .preloader .preload {
@@ -194,8 +184,9 @@ footer a:hover {
   align-items: center;
   flex-direction: column;
   gap: 90px;
-  opacity: 0;
   transition: 0.3s;
+  opacity: 1;
+  transition-delay: 1s;
 }
 .preloader .preload .lines {
   transition: 0.3s;
@@ -230,12 +221,7 @@ footer a:hover {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-.preloader.load .preload {
-  transition: 0.3s;
-  opacity: 1;
-  transition-delay: 1s;
-}
-.preloader.stop .preload {
+.preloader.loaded .preload {
   transition: 0.3s;
   opacity: 0;
 }
