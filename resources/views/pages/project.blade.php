@@ -18,4 +18,17 @@
         <img src="./img/works/1.png" alt="img">
     </div>
 </section>
+<section class="tags container">
+    <h1 class="title">Tags</h1>
+    <ul class="tag-list">
+        <li><a href="#"><span>#</span>php</a></li>
+        <li><a href="#">#yii2</a></li>
+        <li><a href="#">#gulp</a></li>
+        <li><a href="#">#git</a></li>
+        <li><a href="#">#html&css</a></li>
+        <li><a href="#">#js</a></li>
+        <li><a href="#">#jquery</a></li>
+    </ul>
+    <img class="dots" src="./img/dots.png" alt="dots">
+</section>
 @endsection

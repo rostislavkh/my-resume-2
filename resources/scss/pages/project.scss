@@ -1,5 +1,9 @@
 @import '../variables.scss';
 
+// ============================================== Main =============================================
+
+
+
 .titule {
     background-color: $bg-block;
     box-shadow: $tile-shadow;
@@ -54,7 +58,57 @@
 
 
 
+// ============================================== Tags =============================================
 
+.tags {
+    position: relative;
+    padding: 60px 20px;
+
+    .tag-list {
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        width: 100%;
+
+        li a {
+            background-color: $bg-year;
+            color: $txt-color;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-family: $header-f;
+            font-size: $subtitle-mobile-s;
+            box-shadow: $tile-shadow;
+            transition: .3s;
+            
+            span {
+                color: $yellow;
+                transition: .3s;
+            }
+
+            &:hover {
+                background-color: $yellow;
+                color: $bg-block;
+                transition: .3s;
+
+                span {
+                    color: $bg-block;
+                    transition: .3s;
+                }
+            }
+        }
+    }
+
+    .dots {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        transform: translateY(30%);
+    }
+}
 
 
 
