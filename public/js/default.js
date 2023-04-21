@@ -9,11 +9,16 @@
 
 //in case js in turned off
 function liveHeader() {
-  var sc = $(window).scrollTop();
-  if (sc > 1) {
+  var inact = document.querySelector('#inact-h');
+  if (inact) {
     $("header").addClass("small");
   } else {
-    $("header").removeClass("small");
+    var sc = $(window).scrollTop();
+    if (sc > 1) {
+      $("header").addClass("small");
+    } else {
+      $("header").removeClass("small");
+    }
   }
 }
 function scrollspy() {

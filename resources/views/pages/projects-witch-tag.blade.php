@@ -7,7 +7,7 @@
 @section('content')
 <div id="inact-h"></div>
     <section>
-        <div class="title">Projects</div>
+        <h1 class="title">Projects witch tag <span class="yellow">#php</span></h1>
         <div class="portfolio container">
             <div class="portfolio__block">
                 <img src="./img/works/1.png" alt="work">

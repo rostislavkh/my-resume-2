@@ -55,6 +55,14 @@ main {
   background-color: #34353a;
 }
 
+.yellow {
+  color: #ffc86b;
+}
+
+#inact-h {
+  display: none;
+}
+
 .container {
   width: 90%;
   max-width: 1400px;

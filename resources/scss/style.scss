@@ -41,6 +41,14 @@ main {
     background-color: $bg-block;
 }
 
+.yellow {
+    color: $yellow;
+}
+
+#inact-h {
+    display: none;
+}
+
 .container {
     width: 90%;
     max-width: 1400px;

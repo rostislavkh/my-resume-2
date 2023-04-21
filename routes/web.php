@@ -24,3 +24,7 @@ Route::get('/more-projects', function () {
 Route::get('/project', function () {
     return view('pages.project');
 })->name('project');
+
+Route::get('/projects-witch-tag', function () {
+    return view('pages.projects-witch-tag');
+})->name('projects-witch-tag');

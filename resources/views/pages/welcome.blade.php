@@ -65,7 +65,7 @@
         </div>
         <h1 class="title">My skills</h1>
         <div class="skills container oh">
-            <a href="#" class="skills__block">
+            <a href="{{ route('projects-witch-tag') }}" class="skills__block">
                 <img src="./img/logos/php.svg" alt="logo">
                 <span>PHP</span>
             </a>
