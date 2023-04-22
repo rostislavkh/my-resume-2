@@ -50,6 +50,17 @@ $(window).scroll(function () {
     scrollspy();
 });
 
+$('a').click(() => {
+    let btn = document.querySelector('.burger.active');
+    let menu = document.querySelector('.mobile-header.active');
+
+    if (btn && menu) {
+        btn.classList.remove('active');
+        menu.classList.remove('active');
+        document.querySelector('body').classList.remove('oh');
+    }
+});
+
 $('.burger-btn').click(function () {
     document.querySelector('.mobile-header').classList.toggle('active');
     document.querySelector('body').classList.toggle('oh');
