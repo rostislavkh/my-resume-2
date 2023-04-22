@@ -41,6 +41,11 @@ main {
     position: relative;
 }
 
+.tsh-h-y:hover {
+    text-shadow: $txt-yellow-shadow;
+    transition: .3s;
+}
+
 .bg {
     background-color: $bg-block;
 }

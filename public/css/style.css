@@ -55,6 +55,11 @@ main {
   position: relative;
 }
 
+.tsh-h-y:hover {
+  text-shadow: #ffc86b 1px 0 10px;
+  transition: 0.3s;
+}
+
 .bg {
   background-color: #34353a;
 }

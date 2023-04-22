@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Resume</title>
+        <title>@yield('title')</title>
 
         <link rel="stylesheet" href="{{ mix('css/reset.css') }}">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -34,9 +34,10 @@
         <header data-aos="fade-down">
             <a href="/" class="logo"><img src="./img/logo.png" alt="logo"></a>
             <ul class="links">
-                <li><a class="no-load" href="{{ route('home') }}#about-me">About me</a></li>
-                <li><a class="no-load" href="{{ route('home') }}#portfolio">Portfolio</a></li>
-                <li><a class="no-load" href="{{ route('home') }}#contact-me">Contact</a></li>
+                <li><a href="{{ \Request::route()->getName() != 'home' ? route('home') : '' }}#about-me">About me</a></li>
+                <li><a href="{{ \Request::route()->getName() != 'home' ? route('home') : '' }}#portfolio">Portfolio</a></li>
+                <li><a href="{{ \Request::route()->getName() != 'home' ? route('home') : '' }}#contact-me">Contact</a></li>
+                <li><a class="yellow tsh-h-y" href="#">Download</a></li>
             </ul>
             <form class="search" action="/search" method="get">
                 <input type="text" placeholder="Search" autocomplete="off" required>
@@ -135,9 +136,9 @@
                 </div>
             </form>
             <ul class="links">
-                <li><a class="no-load" href="{{ route('home') }}#about-me">About me</a></li>
-                <li><a class="no-load" href="{{ route('home') }}#portfolio">Portfolio</a></li>
-                <li><a class="no-load" href="{{ route('home') }}#contact-me">Contact</a></li>
+                <li><a href="{{ \Request::route()->getName() != 'home' ? route('home') : '' }}#about-me">About me</a></li>
+                <li><a href="{{ \Request::route()->getName() != 'home' ? route('home') : '' }}#portfolio">Portfolio</a></li>
+                <li><a href="{{ \Request::route()->getName() != 'home' ? route('home') : '' }}#contact-me">Contact</a></li>
             </ul>
             <div class="lang">
                 Language: <a href="#">UK</a> | <a class="active" href="#">EN</a>
