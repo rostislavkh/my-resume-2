@@ -12,27 +12,27 @@
 <section class="titule oh">
     <div class="main-block container">
         <div class="info">
-            <div class="title">Hvosting</div>
-            <div class="short-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit blanditiis, explicabo, debitis exercitationem.</div>
+            <div class="title" data-aos="fade-right" data-aos-delay="400">Hvosting</div>
+            <div class="short-desc" data-aos="fade-right" data-aos-delay="700">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit blanditiis, explicabo, debitis exercitationem.</div>
         </div>
         <img src="./img/works/1.png" alt="img">
     </div>
 </section>
 <section class="tags container">
-    <h1 class="title">Tags</h1>
+    <h1 class="title" data-aos="fade-down">Tags</h1>
     <ul class="tag-list">
-        <li><a href="#"><span>#</span>php</a></li>
-        <li><a href="#"><span>#</span>yii2</a></li>
-        <li><a href="#"><span>#</span>gulp</a></li>
-        <li><a href="#"><span>#</span>git</a></li>
-        <li><a href="#"><span>#</span>html&css</a></li>
-        <li><a href="#"><span>#</span>js</a></li>
-        <li><a href="#"><span>#</span>jquery</a></li>
+        <li data-aos="fade-up" data-aos-delay="100"><a href="#"><span>#</span>php</a></li>
+        <li data-aos="fade-up" data-aos-delay="200"><a href="#"><span>#</span>yii2</a></li>
+        <li data-aos="fade-up" data-aos-delay="300"><a href="#"><span>#</span>gulp</a></li>
+        <li data-aos="fade-up" data-aos-delay="400"><a href="#"><span>#</span>git</a></li>
+        <li data-aos="fade-up" data-aos-delay="500"><a href="#"><span>#</span>html&css</a></li>
+        <li data-aos="fade-up" data-aos-delay="600"><a href="#"><span>#</span>js</a></li>
+        <li data-aos="fade-up" data-aos-delay="700"><a href="#"><span>#</span>jquery</a></li>
     </ul>
     <img class="dots" src="./img/dots.png" alt="dots">
 </section>
 <section class="desc bg">
-    <div class="container description">
+    <div class="container description" data-aos="fade-down">
         <h1 class="title">Description</h1>
         <p>Lorem ipsum dolor sit amet <b>consectetur</b> adipisicing elit. Illo eligendi excepturi dolorem eveniet adipisci assumenda quae, enim non tenetur commodi nobis culpa nemo repellat et, at alias aperiam, distinctio modi.
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eligendi excepturi dolorem eveniet adipisci assumenda quae, enim non tenetur commodi nobis culpa nemo repellat et, at alias aperiam, distinctio modi.
@@ -51,17 +51,17 @@
 </section>
 <section class="container">
     <div class="images">
-        <h1 class="title">Images</h1>
-        <a href="./img/works/proj.webp" data-lightbox="./img/works/proj.webp">
+        <h1 class="title" data-aos="fade-down">Images</h1>
+        <a data-aos="fade-up" href="./img/works/proj.webp" data-lightbox="./img/works/proj.webp">
             <img src="./img/works/proj.webp" alt="img">
         </a>
-        <a href="./img/works/proj.webp" data-lightbox="./img/works/prfgjoj.webp">
+        <a data-aos="fade-up" href="./img/works/proj.webp" data-lightbox="./img/works/prfgjoj.webp">
             <img src="./img/works/proj.webp" alt="img">
         </a>
-        <a href="./img/works/proj.webp" data-lightbox="./img/works/profghjj.webp">
+        <a data-aos="fade-up" href="./img/works/proj.webp" data-lightbox="./img/works/profghjj.webp">
             <img src="./img/works/proj.webp" alt="img">
         </a>
-        <a href="./img/works/proj.webp" data-lightbox="./img/works/proghjj.webp">
+        <a data-aos="fade-up" href="./img/works/proj.webp" data-lightbox="./img/works/proghjj.webp">
             <img src="./img/works/proj.webp" alt="img">
         </a>
     </div>

@@ -1,3 +1,5 @@
+let aos = null;
+
 //in case js in turned off
 function liveHeader() {
     let inact = document.querySelector('#inact-h');
@@ -34,13 +36,14 @@ function scrollspy() {
 }
 
 $(window).on('load', function () {
+    AOS.init({
+        offset: 80,
+        once: true
+    });
     document.querySelector('body').classList.toggle('oh');
     document.getElementById('preloader').classList.toggle('loaded');
     liveHeader();
     scrollspy();
-    AOS.init({
-        delay: 400
-    });
 });
 
 $(window).on('beforeunload', function () {

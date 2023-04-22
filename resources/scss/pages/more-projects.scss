@@ -75,7 +75,6 @@
 
                 &:hover {
                     box-shadow: $yellow-shadow;
-                    padding: 10px 40px;
                     transition: .3s;
                 }
             }
@@ -85,27 +84,6 @@
                 transition: .3s;
             }
         }
-    }
-}
-
-.more-projects {
-    display: block;
-    width: fit-content;
-    font-family: $txt-f;
-    font-size: $subtitle-mobile-2-s;
-    line-height: $lh-txt;
-    color: $bg-block-2;
-    background-color: $yellow;
-    border-radius: 10px;
-    padding: 10px 30px;
-    font-weight: bold;
-    margin: 40px auto;
-    transition: .3s;
-
-    &:hover {
-        box-shadow: $yellow-shadow;
-        transform: scale(1.05);
-        transition: .3s;
     }
 }
 

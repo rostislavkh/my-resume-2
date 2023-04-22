@@ -7,9 +7,9 @@
 @section('content')
 <div id="inact-h"></div>
     <section>
-        <h1 class="title">Projects witch tag <span class="yellow">#php</span></h1>
+        <h1 class="title" data-aos="fade-down">Projects witch tag <span class="yellow">#php</span></h1>
         <div class="portfolio container">
-            <div class="portfolio__block">
+            <div class="portfolio__block" data-aos="zoom-in-up">
                 <img src="./img/works/1.png" alt="work">
                 <div>
                     <span class="work__title">Title</span>
@@ -25,7 +25,7 @@
                     <a href="{{ route('project') }}">See More -></a>
                 </div>
             </div>
-            <div class="portfolio__block">
+            <div class="portfolio__block" data-aos="zoom-in-up">
                 <img src="./img/works/2.png" alt="work">
                 <div>
                     <span class="work__title">Title</span>
@@ -35,7 +35,7 @@
                     <a href="#">See More -></a>
                 </div>
             </div>
-            <div class="portfolio__block">
+            <div class="portfolio__block" data-aos="zoom-in-up">
                 <img src="./img/works/3.png" alt="work">
                 <div>
                     <span class="work__title">Title</span>
@@ -45,7 +45,7 @@
                     <a href="#">See More -></a>
                 </div>
             </div>
-            <div class="portfolio__block">
+            <div class="portfolio__block" data-aos="zoom-in-up">
                 <img src="./img/works/4.png" alt="work">
                 <div>
                     <span class="work__title">Title</span>
@@ -55,7 +55,7 @@
                     <a href="#">See More -></a>
                 </div>
             </div>
-            <div class="portfolio__block">
+            <div class="portfolio__block" data-aos="zoom-in-up">
                 <img src="./img/works/5.png" alt="work">
                 <div>
                     <span class="work__title">Title</span>
@@ -65,7 +65,7 @@
                     <a href="#">See More -></a>
                 </div>
             </div>
-            <div class="portfolio__block">
+            <div class="portfolio__block" data-aos="zoom-in-up">
                 <img src="./img/works/6.png" alt="work">
                 <div>
                     <span class="work__title">Title</span>
@@ -75,7 +75,7 @@
                     <a href="#">See More -></a>
                 </div>
             </div>
-            <div class="portfolio__block">
+            <div class="portfolio__block" data-aos="zoom-in-up">
                 <img src="./img/works/2.png" alt="work">
                 <div>
                     <span class="work__title">Title</span>
@@ -85,7 +85,7 @@
                     <a href="#">See More -></a>
                 </div>
             </div>
-            <div class="portfolio__block">
+            <div class="portfolio__block" data-aos="zoom-in-up">
                 <img src="./img/works/3.png" alt="work">
                 <div>
                     <span class="work__title">Title</span>
@@ -95,7 +95,7 @@
                     <a href="#">See More -></a>
                 </div>
             </div>
-            <div class="portfolio__block">
+            <div class="portfolio__block" data-aos="zoom-in-up">
                 <img src="./img/works/4.png" alt="work">
                 <div>
                     <span class="work__title">Title</span>
@@ -106,7 +106,7 @@
                 </div>
             </div>
         </div>
-            <nav class="pagination">
+            <nav class="pagination" data-aos="fade-up">
                 <ul class="pagination-list">
                     {{-- Previous Page Link --}}
                     <li class="pagination-item disable" aria-disabled="true">

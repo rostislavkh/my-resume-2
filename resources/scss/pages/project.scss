@@ -21,12 +21,12 @@
             border-radius: 10px;
             height: 80%;
             perspective: 300px;
-            transform: rotateY(325deg);
+            transform: rotateY(335deg);
             cursor: pointer;
             transition: .3s;
 
             &:hover {
-                transform: rotateY(350deg) scale(1.1);
+                transform: rotateY(340deg) scale(1.05);
                 box-shadow: $yellow-ultra-shadow;
                 transition: .3s;
             }

@@ -183,7 +183,7 @@
         font-size: $subtitle-mobile-s;
         font-family: $txt-f;
         color: $txt-color;
-        transition: .3s;
+        transition: .3s!important;
 
         img {
             max-width: 175px;
@@ -295,7 +295,6 @@
                 
                 &:hover {
                     box-shadow: $yellow-shadow;
-                    padding: 10px 40px;
                     transition: .3s;
                 }
             }
@@ -320,11 +319,10 @@
     padding: 10px 30px;
     font-weight: bold;
     margin: 40px auto;
-    transition: .3s;
+    transition: .3s !important;
 
     &:hover {
         box-shadow: $yellow-shadow;
-        transform: scale(1.05);
         transition: .3s;
     }
 }
@@ -344,12 +342,7 @@
     margin-top: 125px;
     background-color: $bg-block-2;
     box-shadow: $tile-shadow;
-    padding: 60px 0;
-
-    .title {
-        text-align: start;
-        margin-top: -85px;
-    }
+    padding: 0 0 60px 0;
 
     .exp {
         &__items {
@@ -437,6 +430,11 @@
             }
         }
     }
+}
+
+.exp-title {
+    position: absolute;
+    bottom: -135px;
 }
 
 
