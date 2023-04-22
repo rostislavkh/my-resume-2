@@ -7,6 +7,7 @@
         <title>Resume</title>
 
         <link rel="stylesheet" href="{{ mix('css/reset.css') }}">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="{{ mix('css/style.css') }}">
         <link rel="stylesheet" href="{{ mix('css/header.css') }}">
         @yield('styles')
@@ -30,7 +31,7 @@
                 <div class="loading-text">Завантаження</div>
             </div>
         </div>
-        <header>
+        <header data-aos="fade-down">
             <a href="/" class="logo"><img src="./img/logo.png" alt="logo"></a>
             <ul class="links">
                 <li><a class="no-load" href="{{ route('home') }}#about-me">About me</a></li>
@@ -146,6 +147,7 @@
             @yield('content')
         </main>
         <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="{{ mix('js/default.js') }}"></script>
         @yield('scripts')
         <footer>

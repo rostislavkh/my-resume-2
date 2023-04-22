@@ -11,7 +11,7 @@
 @section('content')
     <section class="main-block block-1">
         <div class="titule container">
-            <div class="titule__text">
+            <div class="titule__text" data-aos="fade-right">
                 <p><span>I'M</span> <span class="titule__name">Rostyslav Khorolskyi</span></p>
                 <div class="profession">
                     <ul id="proff">
@@ -22,10 +22,10 @@
                 </div>
                 <a href="#contact-me">Contact Me</a>
             </div>
-            <div class="titule__img">
+            <div class="titule__img" data-aos="fade-left">
                 <img src="./img/avatar.png" alt="avatar">
             </div>
-            <ul class="social">
+            <ul class="social" data-aos="fade-up">
                 <li><a href="#"><svg width="40px" height="40px" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 30 30">
                             <path

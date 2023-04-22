@@ -28,6 +28,7 @@
   justify-content: center;
   flex-direction: column;
   gap: 30px;
+  z-index: 1;
 }
 .titule__text p {
   max-width: 500px;

@@ -42,6 +42,9 @@ $(window).on('load', function () {
   document.getElementById('preloader').classList.toggle('loaded');
   liveHeader();
   scrollspy();
+  AOS.init({
+    delay: 400
+  });
 });
 $(window).on('beforeunload', function () {
   document.querySelector('body').classList.toggle('oh');
