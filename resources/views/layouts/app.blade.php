@@ -139,6 +139,7 @@
                 <li><a href="{{ \Request::route()->getName() != 'home' ? route('home') : '' }}#about-me">About me</a></li>
                 <li><a href="{{ \Request::route()->getName() != 'home' ? route('home') : '' }}#portfolio">Portfolio</a></li>
                 <li><a href="{{ \Request::route()->getName() != 'home' ? route('home') : '' }}#contact-me">Contact</a></li>
+                <li><a class="yellow tsh-h-y" href="#">Download</a></li>
             </ul>
             <div class="lang">
                 Language: <a href="#">UK</a> | <a class="active" href="#">EN</a>

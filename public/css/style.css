@@ -65,7 +65,7 @@ main {
 }
 
 .yellow {
-  color: #ffc86b;
+  color: #ffc86b !important;
 }
 
 #inact-h {
