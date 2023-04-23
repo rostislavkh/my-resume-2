@@ -9,8 +9,6 @@ use Illuminate\Http\Request;
 
 class AboutMe extends Controller
 {
-    use Translation;
-
     public function create(Request $request) {
         $filename = time() . '.' . $request->img->getClientOriginalExtension();
         $request->img->move(public_path('uploads'), $filename);
@@ -24,8 +22,10 @@ class AboutMe extends Controller
             'description_uk' => $request->description_uk,
             'socials' => $request->socials,
             'phone_number' => $request->phone_number,
-            'address' => $request->address,
-            'address_url' => $request->address_url
+            'address_en' => $request->address_en,
+            'address_uk' => $request->address_uk,
+            'address_url' => $request->address_url,
+            'email' => $request->email
         ]);
 
         admin_toastr('Information created!', 'success');
@@ -56,8 +56,10 @@ class AboutMe extends Controller
             'description_uk' => $request->description_uk,
             'socials' => $request->socials,
             'phone_number' => $request->phone_number,
-            'address' => $request->address,
-            'address_url' => $request->address_url
+            'address_en' => $request->address_en,
+            'address_uk' => $request->address_uk,
+            'address_url' => $request->address_url,
+            'email' => $request->email
         ]);
 
         admin_toastr('Information updated!', 'success');

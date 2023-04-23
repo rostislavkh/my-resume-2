@@ -143,6 +143,12 @@
   margin-left: 80px;
   position: relative;
 }
+.about__text strong {
+  color: #ffc86b;
+}
+.about__text p {
+  padding-bottom: 15px;
+}
 .about__text::before {
   content: "";
   position: absolute;

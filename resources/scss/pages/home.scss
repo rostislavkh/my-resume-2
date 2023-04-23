@@ -144,6 +144,14 @@
         margin-left: 80px;
         position: relative;
 
+        strong {
+            color: $yellow;
+        }
+
+        p {
+            padding-bottom: 15px;
+        }
+
         &::before {
             content: "";
             position: absolute;

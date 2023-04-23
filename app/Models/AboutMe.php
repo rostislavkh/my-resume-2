@@ -2,12 +2,14 @@
 
 namespace App\Models;
 
+use App\Helpers\Translation;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class AboutMe extends Model
 {
     use HasFactory;
+    use Translation;
 
     protected $fillable = [
         'img',
@@ -18,8 +20,10 @@ class AboutMe extends Model
         'description_uk',
         'socials',
         'phone_number',
-        'address',
-        'address_url'
+        'address_en',
+        'address_uk',
+        'address_url',
+        'email'
     ];
 
     public function getPositionsAttribute($value)

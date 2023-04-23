@@ -7,6 +7,6 @@ trait Translation
     public function getTranslate($name)
     {
         $locale = \Illuminate\Support\Facades\App::getLocale();
-        return $locale == 'en' ? $this[$name] : ($this[$name . '_' . $locale] ? $this[$name . '_' . $locale] : $this[$name]);
+        return $this[$name . '_' . $locale];
     }
 }

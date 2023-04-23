@@ -33,8 +33,10 @@ class HomeController extends Controller
             $form->text('url', 'URL')->required();
         })->required();
         $form->phonenumber('phone_number', 'Phone number')->options(['mask' => '+38 (099) 999-99-99'])->required();
-        $form->text('address', 'Address')->required();
+        $form->text('address_en', 'Address [EN]')->required();
+        $form->text('address_uk', 'Address [UK]')->required();
         $form->text('address_url', 'Address URL')->required();
+        $form->email('email', 'Email')->required();
 
         $form->disableReset();
 
