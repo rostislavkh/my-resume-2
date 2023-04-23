@@ -21,7 +21,7 @@
     </div>
 </section>
 <section class="tags container">
-    <h1 class="title" data-aos="fade-down">Tags</h1>
+    <h1 class="title" data-aos="fade-down">{{ __('Tags') }}</h1>
     <ul class="tag-list">
         <li data-aos="fade-up" data-aos-delay="100"><a href="#"><span>#</span>php</a></li>
         <li data-aos="fade-up" data-aos-delay="200"><a href="#"><span>#</span>yii2</a></li>
@@ -35,7 +35,7 @@
 </section>
 <section class="desc bg">
     <div class="container description" data-aos="fade-down">
-        <h1 class="title">Description</h1>
+        <h1 class="title">{{ __('Description') }}</h1>
         <p>Lorem ipsum dolor sit amet <b>consectetur</b> adipisicing elit. Illo eligendi excepturi dolorem eveniet adipisci assumenda quae, enim non tenetur commodi nobis culpa nemo repellat et, at alias aperiam, distinctio modi.
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eligendi excepturi dolorem eveniet adipisci assumenda quae, enim non tenetur commodi nobis culpa nemo repellat et, at alias aperiam, distinctio modi.
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eligendi excepturi dolorem eveniet adipisci assumenda quae, enim non tenetur commodi nobis culpa nemo repellat et, at alias aperiam, distinctio modi.</p>
@@ -53,7 +53,7 @@
 </section>
 <section class="container">
     <div class="images">
-        <h1 class="title" data-aos="fade-down">Images</h1>
+        <h1 class="title" data-aos="fade-down">{{ __('Images') }}</h1>
         <a data-aos="fade-up" href="./img/works/proj.webp" data-lightbox="./img/works/proj.webp">
             <img src="./img/works/proj.webp" alt="img">
         </a>

@@ -9,7 +9,7 @@
 @section('content')
 <div id="inact-h"></div>
     <section>
-        <h1 class="title" data-aos="fade-down">Projects witch tag <span class="yellow">#php</span></h1>
+        <h1 class="title" data-aos="fade-down">{{ __('Projects witch tag') }} <span class="yellow">#php</span></h1>
         <div class="portfolio container">
             <div class="portfolio__block" data-aos="zoom-in-up">
                 <img src="./img/works/1.png" alt="work">
@@ -24,7 +24,7 @@
                         Numquam molestiae commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum
                         pariatur consequuntur porro non magnam autem, placeat dolores mollitia asperiores dignissimos
                         illum.</span>
-                    <a href="{{ route('project') }}">See More -></a>
+                    <a href="{{ route('project') }}">{{ __('See More') }} -></a>
                 </div>
             </div>
             <div class="portfolio__block" data-aos="zoom-in-up">
@@ -34,7 +34,7 @@
                     <span class="work__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae
                         commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum pariatur consequuntur
                         porro non magnam autem, placeat dolores mollitia asperiores dignissimos illum.</span>
-                    <a href="#">See More -></a>
+                    <a href="#">{{ __('See More') }} -></a>
                 </div>
             </div>
             <div class="portfolio__block" data-aos="zoom-in-up">
@@ -44,7 +44,7 @@
                     <span class="work__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae
                         commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum pariatur consequuntur
                         porro non magnam autem, placeat dolores mollitia asperiores dignissimos illum.</span>
-                    <a href="#">See More -></a>
+                    <a href="#">{{ __('See More') }} -></a>
                 </div>
             </div>
             <div class="portfolio__block" data-aos="zoom-in-up">
@@ -54,7 +54,7 @@
                     <span class="work__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae
                         commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum pariatur consequuntur
                         porro non magnam autem, placeat dolores mollitia asperiores dignissimos illum.</span>
-                    <a href="#">See More -></a>
+                    <a href="#">{{ __('See More') }} -></a>
                 </div>
             </div>
             <div class="portfolio__block" data-aos="zoom-in-up">
@@ -64,7 +64,7 @@
                     <span class="work__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae
                         commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum pariatur consequuntur
                         porro non magnam autem, placeat dolores mollitia asperiores dignissimos illum.</span>
-                    <a href="#">See More -></a>
+                    <a href="#">{{ __('See More') }} -></a>
                 </div>
             </div>
             <div class="portfolio__block" data-aos="zoom-in-up">
@@ -74,7 +74,7 @@
                     <span class="work__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae
                         commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum pariatur consequuntur
                         porro non magnam autem, placeat dolores mollitia asperiores dignissimos illum.</span>
-                    <a href="#">See More -></a>
+                    <a href="#">{{ __('See More') }} -></a>
                 </div>
             </div>
             <div class="portfolio__block" data-aos="zoom-in-up">
@@ -84,7 +84,7 @@
                     <span class="work__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae
                         commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum pariatur consequuntur
                         porro non magnam autem, placeat dolores mollitia asperiores dignissimos illum.</span>
-                    <a href="#">See More -></a>
+                    <a href="#">{{ __('See More') }} -></a>
                 </div>
             </div>
             <div class="portfolio__block" data-aos="zoom-in-up">
@@ -94,7 +94,7 @@
                     <span class="work__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae
                         commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum pariatur consequuntur
                         porro non magnam autem, placeat dolores mollitia asperiores dignissimos illum.</span>
-                    <a href="#">See More -></a>
+                    <a href="#">{{ __('See More') }} -></a>
                 </div>
             </div>
             <div class="portfolio__block" data-aos="zoom-in-up">
@@ -104,7 +104,7 @@
                     <span class="work__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae
                         commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum pariatur consequuntur
                         porro non magnam autem, placeat dolores mollitia asperiores dignissimos illum.</span>
-                    <a href="#">See More -></a>
+                    <a href="#">{{ __('See More') }} -></a>
                 </div>
             </div>
         </div>

@@ -14,7 +14,7 @@
     <section class="main-block block-1">
         <div class="titule container">
             <div class="titule__text" data-aos="fade-right" data-aos-delay="400">
-                <p><span>I'M</span> <span class="titule__name">Rostyslav Khorolskyi</span></p>
+                <p><span>{{ __("I'M") }}</span> <span class="titule__name">Rostyslav Khorolskyi</span></p>
                 <div class="profession">
                     <ul id="proff">
                         <li>PHP Back-end developer.</li>
@@ -22,7 +22,7 @@
                     </ul>
                     <p id="profession"></p>
                 </div>
-                <a href="#contact-me">Contact Me</a>
+                <a href="#contact-me">{{ __('Contact Me') }}</a>
             </div>
             <div class="titule__img" data-aos="fade-left" data-aos-delay="400">
                 <img src="./img/avatar.png" alt="avatar">
@@ -55,7 +55,7 @@
     </section>
     <section id="about-me">
         <div class="block-2 about container" data-aos="fade-up">
-            <h1 class="title about__title">About me</h1>
+            <h1 class="title about__title">{{ __('About me') }}</h1>
             <div class="about__text text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur ducimus praesentium velit iste sequi
                 ut. Cupiditate qui, dicta in alias aut autem nesciunt! Tempora nam laborum sequi magni nihil!
@@ -65,7 +65,7 @@
                 ut. Cupiditate qui, dicta in alias aut autem nesciunt! Tempora nam laborum sequi magni nihil!
             </div>
         </div>
-        <h1 class="title" data-aos="fade-down">My skills</h1>
+        <h1 class="title" data-aos="fade-down">{{ __('My skills') }}</h1>
         <div class="skills container oh">
             <a href="{{ route('projects-witch-tag') }}" class="skills__block" data-aos="zoom-out-up">
                 <img src="./img/logos/php.svg" alt="logo">
@@ -118,7 +118,7 @@
             <img class="skills__dots" src="./img/dots.png" alt="dots">
         </div>
     </section>
-    <h1 class="title" data-aos="fade-down">Portfilo</h1>
+    <h1 class="title" data-aos="fade-down">{{ __('Portfilo') }}</h1>
     <section id="portfolio">
         <div class="portfolio container">
             <div class="portfolio__block" data-aos="zoom-in-up">
@@ -134,7 +134,7 @@
                         Numquam molestiae commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum
                         pariatur consequuntur porro non magnam autem, placeat dolores mollitia asperiores dignissimos
                         illum.</span>
-                    <a href="#">See More -></a>
+                    <a href="#">{{ __('See More') }} -></a>
                 </div>
             </div>
             <div class="portfolio__block" data-aos="zoom-in-up">
@@ -144,7 +144,7 @@
                     <span class="work__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae
                         commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum pariatur consequuntur
                         porro non magnam autem, placeat dolores mollitia asperiores dignissimos illum.</span>
-                    <a href="#">See More -></a>
+                    <a href="#">{{ __('See More') }} -></a>
                 </div>
             </div>
             <div class="portfolio__block" data-aos="zoom-in-up">
@@ -154,7 +154,7 @@
                     <span class="work__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae
                         commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum pariatur consequuntur
                         porro non magnam autem, placeat dolores mollitia asperiores dignissimos illum.</span>
-                    <a href="#">See More -></a>
+                    <a href="#">{{ __('See More') }} -></a>
                 </div>
             </div>
             <div class="portfolio__block" data-aos="zoom-in-up">
@@ -164,7 +164,7 @@
                     <span class="work__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae
                         commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum pariatur consequuntur
                         porro non magnam autem, placeat dolores mollitia asperiores dignissimos illum.</span>
-                    <a href="#">See More -></a>
+                    <a href="#">{{ __('See More') }} -></a>
                 </div>
             </div>
             <div class="portfolio__block" data-aos="zoom-in-up">
@@ -174,7 +174,7 @@
                     <span class="work__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae
                         commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum pariatur consequuntur
                         porro non magnam autem, placeat dolores mollitia asperiores dignissimos illum.</span>
-                    <a href="#">See More -></a>
+                    <a href="#">{{ __('See More') }} -></a>
                 </div>
             </div>
             <div class="portfolio__block" data-aos="zoom-in-up">
@@ -184,13 +184,13 @@
                     <span class="work__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae
                         commodi repellendus consequatur incidunt explicabo suscipit laudantium, rerum pariatur consequuntur
                         porro non magnam autem, placeat dolores mollitia asperiores dignissimos illum.</span>
-                    <a href="#">See More -></a>
+                    <a href="#">{{ __('See More') }} -></a>
                 </div>
             </div>
         </div>
-        <a class="more-projects" href="{{ route('more-projects') }}" data-aos="zoom-in-up">View More</a>
+        <a class="more-projects" href="{{ route('more-projects') }}" data-aos="zoom-in-up">{{ __('View More') }}</a>
         <div class="container pr">
-            <h1 class="title exp-title" data-aos="fade-right">Experience</h1>
+            <h1 class="title exp-title" data-aos="fade-right">{{ __('Experience') }}</h1>
         </div>
         <div class="experience oh">
             <div class="experience__content container">
@@ -227,19 +227,19 @@
     </section>
     <section class="container contact-me oh" id="contact-me">
         <img src="./img/dots.png" alt="dots">
-        <h1 class="title" data-aos="fade-down">Contact Me</h1>
+        <h1 class="title" data-aos="fade-down">{{ __('Contact Me') }}</h1>
         <form action="#" method="post">
-            <input type="text" placeholder="Name" required data-aos="fade-right">
-            <input type="email" placeholder="Email" required data-aos="fade-left">
-            <input type="text" placeholder="Phone, Telegram or Viber" required data-aos="fade-right">
+            <input type="text" placeholder="{{ __('Name') }}" required data-aos="fade-right">
+            <input type="email" placeholder="{{ __('Email') }}" required data-aos="fade-left">
+            <input type="text" placeholder="{{ __('Phone') }}, Telegram {{ __('or') }} Viber" required data-aos="fade-right">
             <textarea name="text" rows="4" required data-aos="fade-left"></textarea>
-            <button type="submit" data-aos="fade-up">Send</button>
+            <button type="submit" data-aos="fade-up">{{ __('Send') }}</button>
         </form>
     </section>
     <section class="my-contacts">
         <div class="up">
             <span></span>
-            <h1 class="title" data-aos="fade-down">My Contacts</h1>
+            <h1 class="title" data-aos="fade-down">{{ __('My Contacts') }}</h1>
             <span></span>
         </div>
         <div class="contacts container">
