@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Helpers\Translation;
 use App\Models\AboutMe as ModelsAboutMe;
 use Exception;
 use Illuminate\Http\Request;
 
 class AboutMe extends Controller
 {
+    use Translation;
+
     public function create(Request $request) {
         $filename = time() . '.' . $request->img->getClientOriginalExtension();
         $request->img->move(public_path('uploads'), $filename);

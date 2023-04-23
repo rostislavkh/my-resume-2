@@ -1,8 +1,9 @@
 <?php
 
 use App\Http\Controllers\AboutMe;
-use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,19 +16,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::group([
+    'prefix' => LaravelLocalization::setLocale(),
+    'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']
+], function () {
 
-Route::get('/more-projects', function () {
-    return view('pages.more-projects');
-})->name('more-projects');
+    Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/project', function () {
-    return view('pages.project');
-})->name('project');
+    Route::get('/more-projects', function () {
+        return view('pages.more-projects');
+    })->name('more-projects');
 
-Route::get('/projects-witch-tag', function () {
-    return view('pages.projects-witch-tag');
-})->name('projects-witch-tag');
+    Route::get('/project', function () {
+        return view('pages.project');
+    })->name('project');
+
+    Route::get('/projects-witch-tag', function () {
+        return view('pages.projects-witch-tag');
+    })->name('projects-witch-tag');
+});
 
 
 Route::post('/create-about-me', [AboutMe::class, 'create'])->name('create-about-me');
