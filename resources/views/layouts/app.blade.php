@@ -1,3 +1,7 @@
+@php
+    $cv = \App\Models\AboutMe::get()->last()->cv;
+@endphp
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -37,7 +41,7 @@
                 <li><a href="{{ \Request::route()->getName() != 'home' ? route('home') : '' }}#about-me">{{ __('About me') }}</a></li>
                 <li><a href="{{ \Request::route()->getName() != 'home' ? route('home') : '' }}#portfolio">{{ __('Portfolio') }}</a></li>
                 <li><a href="{{ \Request::route()->getName() != 'home' ? route('home') : '' }}#contact-me">{{ __('Contact') }}</a></li>
-                <li><a class="yellow tsh-h-y" href="#">{{ __('Download') }}</a></li>
+                <li><a class="yellow tsh-h-y" target="_blank" href="{{ url('/') . '/uploads/' . $cv }}">{{ __('Download') }}</a></li>
             </ul>
             <form class="search" action="/search" method="get">
                 <input type="text" placeholder="{{ __('Search') }}" autocomplete="off" required>
@@ -139,7 +143,7 @@
                 <li><a href="{{ \Request::route()->getName() != 'home' ? route('home') : '' }}#about-me">{{ __('About me') }}</a></li>
                 <li><a href="{{ \Request::route()->getName() != 'home' ? route('home') : '' }}#portfolio">{{ __('Portfolio') }}</a></li>
                 <li><a href="{{ \Request::route()->getName() != 'home' ? route('home') : '' }}#contact-me">{{ __('Contact') }}</a></li>
-                <li><a class="yellow tsh-h-y" href="#">{{ __('Download') }}</a></li>
+                <li><a class="yellow tsh-h-y" target="_blank" href="{{ url('/') . '/uploads/' . $cv }}">{{ __('Download') }}</a></li>
             </ul>
             <div class="lang">
                 {{ __('Language') }}: <a class="{{ \Illuminate\Support\Facades\App::getLocale() == 'uk' ? 'active' : '' }}" href="{{ LaravelLocalization::getLocalizedURL('uk', null, [], true) }}">UK</a> | <a class="{{ \Illuminate\Support\Facades\App::getLocale() == 'en' ? 'active' : '' }}" href="{{ LaravelLocalization::getLocalizedURL('en', null, [], true) }}">EN</a>

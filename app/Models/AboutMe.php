@@ -13,6 +13,7 @@ class AboutMe extends Model
 
     protected $fillable = [
         'img',
+        'cv',
         'name_en',
         'name_uk',
         'positions',

@@ -13,8 +13,12 @@ class AboutMe extends Controller
         $filename = time() . '.' . $request->img->getClientOriginalExtension();
         $request->img->move(public_path('uploads'), $filename);
 
+        $cvname = time() . '.' . $request->cv->getClientOriginalExtension();
+        $request->cv->move(public_path('uploads'), $cvname);
+
         ModelsAboutMe::create([
             'img' => $filename,
+            'cv' => $cvname,
             'name_en' => $request->name_en,
             'name_uk' => $request->name_uk,
             'positions' => $request->positions,
@@ -47,7 +51,19 @@ class AboutMe extends Controller
             $request->img->move(public_path('uploads'), $filename);
         }
 
+        $cvname = $model->cv;
+
+        if ($request->cv) {
+            try {
+                unlink(public_path('uploads/' . $model->img));
+            } catch (Exception $e) {}
+
+            $cvname = time() . '.' . $request->cv->getClientOriginalExtension();
+            $request->cv->move(public_path('uploads'), $cvname);
+        }
+
         $model->update([
+            'cv' => $cvname,
             'img' => $filename,
             'name_en' => $request->name_en,
             'name_uk' => $request->name_uk,

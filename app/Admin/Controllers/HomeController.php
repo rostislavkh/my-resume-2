@@ -16,6 +16,7 @@ class HomeController extends Controller
         $form = new Form($info);
 
         $form->divider('Main block');
+        $form->image('cv', 'CV')->required();
         $form->image('img', 'Image')->required();
         $form->text('name_en', 'Name [EN]')->required();
         $form->text('name_uk', 'Name [UK]');
