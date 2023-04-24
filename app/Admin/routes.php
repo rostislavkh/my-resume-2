@@ -18,4 +18,5 @@ Route::group([
     $router->resource('skills', SkillsController::class);
     $router->resource('projects', ProjectController::class);
     $router->resource('eexperiences', ExperienceController::class);
+    $router->resource('requests', RequestController::class);
 });

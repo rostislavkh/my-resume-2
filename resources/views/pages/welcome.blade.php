@@ -102,10 +102,11 @@
     <section class="container contact-me oh" id="contact-me">
         <img src="./img/dots.png" alt="dots">
         <h1 class="title" data-aos="fade-down">{{ __('Contact Me') }}</h1>
-        <form action="#" method="post">
-            <input type="text" placeholder="{{ __('Name') }}" required data-aos="fade-right">
-            <input type="email" placeholder="{{ __('Email') }}" required data-aos="fade-left">
-            <input type="text" placeholder="{{ __('Phone') }}, Telegram {{ __('or') }} Viber" required data-aos="fade-right">
+        <form action="{{ route('make-request') }}" id="request" method="post">
+            @csrf
+            <input type="text" name="name" placeholder="{{ __('Name') }}" required data-aos="fade-right">
+            <input type="email" name="email" placeholder="{{ __('Email') }}" required data-aos="fade-left">
+            <input type="text" name="contact" placeholder="{{ __('Phone') }}, Telegram {{ __('or') }} Viber" required data-aos="fade-right">
             <textarea name="text" rows="4" required data-aos="fade-left"></textarea>
             <button type="submit" data-aos="fade-up">{{ __('Send') }}</button>
         </form>

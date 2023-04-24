@@ -34,3 +34,4 @@ Route::group([
 
 Route::post('/create-about-me', [AboutMe::class, 'create'])->name('create-about-me');
 Route::post('/set-about-me', [AboutMe::class, 'update'])->name('set-about-me');
+Route::post('/make-request', [HomeController::class, 'makeRequest'])->name('make-request');
