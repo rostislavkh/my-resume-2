@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Support\Str;
 use Spatie\EloquentSortable\Sortable;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\EloquentSortable\SortableTrait;
@@ -17,6 +18,11 @@ class Project extends Model implements Sortable
 
     public function skills() {
         return $this->belongsToMany(Skills::class);
+    }
+
+    public function setNameEnAttribute($value)
+    {
+        $this->attributes['slug'] = Str::slug($value);
     }
 
     public function setImagesAttribute($pictures)
