@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Helpers\Translation;
 use Illuminate\Support\Str;
 use Spatie\EloquentSortable\Sortable;
 use Illuminate\Database\Eloquent\Model;
@@ -10,6 +11,7 @@ use Spatie\EloquentSortable\SortableTrait;
 class Project extends Model implements Sortable
 {
     use SortableTrait;
+    use Translation;
 
     public $sortable = [
         'order_column_name' => 'order',

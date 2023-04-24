@@ -118,8 +118,17 @@
 .description .title {
   margin-bottom: 40px;
 }
-.description b {
-  color: #ffc86b;
+.description b, .description strong, .description a {
+  color: #ffc86b !important;
+}
+.description a {
+  -webkit-text-decoration: revert;
+          text-decoration: revert;
+  transition: 0.3s;
+}
+.description a:hover {
+  text-shadow: #ffc86b 1px 0 10px;
+  transition: 0.3s;
 }
 .description p, .description ul {
   padding-bottom: 20px;

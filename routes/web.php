@@ -3,6 +3,7 @@
 use App\Http\Controllers\AboutMe;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProjectsController;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 /*
@@ -23,15 +24,11 @@ Route::group([
 
     Route::get('/', [HomeController::class, 'index'])->name('home');
 
-    Route::get('/more-projects', function () {
-        return view('pages.more-projects');
-    })->name('more-projects');
+    Route::get('/more-projects', [ProjectsController::class, 'index'])->name('more-projects');
 
-    Route::get('/project', function () {
-        return view('pages.project');
-    })->name('project');
+    Route::get('/project/{project:slug}', [ProjectsController::class, 'project'])->name('project');
 
-    Route::get('/projects-witch-tag', function () {
+    Route::get('/projects-witch-tag/{skills:tag}', function () {
         return view('pages.projects-witch-tag');
     })->name('projects-witch-tag');
 });
@@ -39,7 +36,3 @@ Route::group([
 
 Route::post('/create-about-me', [AboutMe::class, 'create'])->name('create-about-me');
 Route::post('/set-about-me', [AboutMe::class, 'update'])->name('set-about-me');
-
-Route::get('/phpinfo', function () {
-    return phpinfo();
-});

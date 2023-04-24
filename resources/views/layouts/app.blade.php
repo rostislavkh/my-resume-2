@@ -32,7 +32,7 @@
             </div>
         </div>
         <header data-aos="fade-down">
-            <a href="/" class="logo"><img src="./img/logo.png" alt="logo"></a>
+            <a href="/" class="logo"><img src="{{ url('/') }}/img/logo.png" alt="logo"></a>
             <ul class="links">
                 <li><a href="{{ \Request::route()->getName() != 'home' ? route('home') : '' }}#about-me">{{ __('About me') }}</a></li>
                 <li><a href="{{ \Request::route()->getName() != 'home' ? route('home') : '' }}#portfolio">{{ __('Portfolio') }}</a></li>
@@ -52,7 +52,7 @@
                         <li class="label">{{ __('Projects') }}</li>
                         <li class="proj">
                             <a href="#">
-                                <img src="./img/works/1.png" alt="img">
+                                <img src="{{ url('/') }}/img/works/1.png" alt="img">
                                 <div class="proj__info">
                                     <h4 class="name">Hvosting</h4>
                                     <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, adipisci veritatis dignissimos cum, atque voluptate tempore hic unde explicabo amet, quo officia cupiditate beatae deserunt libero sint dolore vitae quis.</div>
@@ -61,7 +61,7 @@
                         </li>
                         <li class="proj">
                             <a href="#">
-                                <img src="./img/works/1.png" alt="img">
+                                <img src="{{ url('/') }}/img/works/1.png" alt="img">
                                 <div class="proj__info">
                                     <h4 class="name">Hvosting</h4>
                                     <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, adipisci veritatis dignissimos cum, atque voluptate tempore hic unde explicabo amet, quo officia cupiditate beatae deserunt libero sint dolore vitae quis.</div>
@@ -70,7 +70,7 @@
                         </li>
                         <li class="proj">
                             <a href="#">
-                                <img src="./img/works/1.png" alt="img">
+                                <img src="{{ url('/') }}/img/works/1.png" alt="img">
                                 <div class="proj__info">
                                     <h4 class="name">Hvosting</h4>
                                     <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, adipisci veritatis dignissimos cum, atque voluptate tempore hic unde explicabo amet, quo officia cupiditate beatae deserunt libero sint dolore vitae quis.</div>
@@ -102,7 +102,7 @@
                         <li class="label">{{ __('Projects') }}</li>
                         <li class="proj">
                             <a href="#">
-                                <img src="./img/works/1.png" alt="img">
+                                <img src="{{ url('/') }}/img/works/1.png" alt="img">
                                 <div class="proj__info">
                                     <h4 class="name">Hvosting</h4>
                                     <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, adipisci veritatis dignissimos cum, atque voluptate tempore hic unde explicabo amet, quo officia cupiditate beatae deserunt libero sint dolore vitae quis.</div>
@@ -111,7 +111,7 @@
                         </li>
                         <li class="proj">
                             <a href="#">
-                                <img src="./img/works/1.png" alt="img">
+                                <img src="{{ url('/') }}/img/works/1.png" alt="img">
                                 <div class="proj__info">
                                     <h4 class="name">Hvosting</h4>
                                     <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, adipisci veritatis dignissimos cum, atque voluptate tempore hic unde explicabo amet, quo officia cupiditate beatae deserunt libero sint dolore vitae quis.</div>
@@ -120,7 +120,7 @@
                         </li>
                         <li class="proj">
                             <a href="#">
-                                <img src="./img/works/1.png" alt="img">
+                                <img src="{{ url('/') }}/img/works/1.png" alt="img">
                                 <div class="proj__info">
                                     <h4 class="name">Hvosting</h4>
                                     <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, adipisci veritatis dignissimos cum, atque voluptate tempore hic unde explicabo amet, quo officia cupiditate beatae deserunt libero sint dolore vitae quis.</div>

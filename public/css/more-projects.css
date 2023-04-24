@@ -63,6 +63,7 @@
   font-family: "RobotoMono-Regular";
   font-size: 28px;
   letter-spacing: -1px;
+  text-align: center;
 }
 .portfolio__block div .work__text {
   text-align: center;

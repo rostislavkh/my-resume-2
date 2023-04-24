@@ -134,8 +134,18 @@
         margin-bottom: 40px;
     }
 
-    b {
-        color: $yellow;
+    b, strong, a {
+        color: $yellow!important;
+    }
+
+    a {
+        text-decoration: revert;
+        transition: .3s;
+
+        &:hover {
+            text-shadow: $txt-yellow-shadow;
+            transition: .3s;
+        }
     }
 
     p, ul {
