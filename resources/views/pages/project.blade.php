@@ -24,7 +24,7 @@
     <h1 class="title" data-aos="fade-down">{{ __('Tags') }}</h1>
     <ul class="tag-list">
         @foreach ($project->skills as $tag)
-            <li data-aos="fade-up" data-aos-delay="100"><a href="{{ route('projects-witch-tag', ['skills' => $tag->tag]) }}"><span>#</span>{{ $tag->tag }}</a></li>
+            <li data-aos="fade-up" data-aos-delay="100"><a href="{{ route('projects-witch-tag', ['skill' => $tag->tag]) }}"><span>#</span>{{ $tag->tag }}</a></li>
         @endforeach
     </ul>
     <img class="dots" src="{{ url('/') }}/img/dots.png" alt="dots">

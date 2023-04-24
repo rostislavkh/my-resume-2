@@ -28,9 +28,7 @@ Route::group([
 
     Route::get('/project/{project:slug}', [ProjectsController::class, 'project'])->name('project');
 
-    Route::get('/projects-witch-tag/{skills:tag}', function () {
-        return view('pages.projects-witch-tag');
-    })->name('projects-witch-tag');
+    Route::get('/projects-witch-tag/{skill:tag}', [ProjectsController::class, 'projectsWithTag'])->name('projects-witch-tag');
 });
 
 

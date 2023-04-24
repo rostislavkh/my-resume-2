@@ -21,7 +21,7 @@ class Skills extends Model implements Sortable
         $this->attributes['tag'] = Str::slug($value);
     }
 
-    public function project()
+    public function projects()
     {
         return $this->belongsToMany(Project::class);
     }

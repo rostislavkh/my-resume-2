@@ -54,7 +54,7 @@
         <h1 class="title" data-aos="fade-down">{{ __('My skills') }}</h1>
         <div class="skills container oh">
             @foreach ($skills as $skill)
-                <a href="{{ route('projects-witch-tag', ['skills' => $skill->tag]) }}" class="skills__block" data-aos="zoom-out-up">
+                <a href="{{ route('projects-witch-tag', ['skill' => $skill->tag]) }}" class="skills__block" data-aos="zoom-out-up">
                     <img src="{{ './uploads/' . $skill->image }}" alt="logo">
                     <span>{{ $skill->label }}</span>
                 </a>
