@@ -17,4 +17,5 @@ Route::group([
     $router->get('/', 'HomeController@index')->name('home');
     $router->resource('skills', SkillsController::class);
     $router->resource('projects', ProjectController::class);
+    $router->resource('eexperiences', ExperienceController::class);
 });

@@ -85,32 +85,16 @@
         <div class="experience oh">
             <div class="experience__content container">
                 <div class="exp__items">
-                    <div class="exp__item">
-                        <span class="exp__date text" data-aos="fade-right">08.2022-02.2023</span>
-                        <div class="exp__position" data-aos="fade-left">PHP developer (Laravel)</div>
-                        <div class="exp__company" data-aos="fade-left" data-aos-delay="100">WebGenerator</div>
-                        <div class="text exp__description" data-aos="fade-up" data-aos-delay="200">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque fugit explicabo maxime facilis, sapiente corrupti animi sint placeat perspiciatis, id, ullam nulla beatae architecto exercitationem itaque quibusdam temporibus facere!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque fugit explicabo maxime facilis, sapiente corrupti animi sint placeat perspiciatis, id, ullam nulla beatae architecto exercitationem itaque quibusdam temporibus facere!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque fugit explicabo maxime facilis, sapiente corrupti animi sint placeat perspiciatis, id, ullam nulla beatae architecto exercitationem itaque quibusdam temporibus facere!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque fugit explicabo maxime facilis, sapiente corrupti animi sint placeat perspiciatis, id, ullam nulla beatae architecto exercitationem itaque quibusdam temporibus facere!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque fugit explicabo maxime facilis, sapiente corrupti animi sint placeat perspiciatis, id, ullam nulla beatae architecto exercitationem itaque quibusdam temporibus facere!
+                    @foreach ($exp as $experience)
+                        <div class="exp__item">
+                            <span class="exp__date text" data-aos="fade-right">{{ date('m.Y', strtotime($experience->date_from)) }} - <span class="{{ $experience->is_today ? 'yellow' : '' }}">{{ !$experience->is_today ? date('m.Y', strtotime($experience->date_to)) : __('now') }}</span></span>
+                            <div class="exp__position" data-aos="fade-left">{{ $experience->getTranslate('position') }}</div>
+                            <div class="exp__company" data-aos="fade-left" data-aos-delay="100">{{ $experience->getTranslate('company_name') }}</div>
+                            <div class="text exp__description" data-aos="fade-up" data-aos-delay="200">
+                                {!! $experience->getTranslate('text') !!}
+                            </div>
                         </div>
-                    </div>
-                    <div class="exp__item">
-                        <span class="exp__date text" data-aos="fade-right">08.2022-02.2023</span>
-                        <div class="exp__position" data-aos="fade-left">PHP developer (Laravel)</div>
-                        <div class="exp__company" data-aos="fade-left" data-aos-delay="100">WebGenerator</div>
-                        <div class="text exp__description" data-aos="fade-up" data-aos-delay="200">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque fugit explicabo maxime facilis, sapiente corrupti animi sint placeat perspiciatis, id, ullam nulla beatae architecto exercitationem itaque quibusdam temporibus facere!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque fugit explicabo maxime facilis, sapiente corrupti animi sint placeat perspiciatis, id, ullam nulla beatae architecto exercitationem itaque quibusdam temporibus facere!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque fugit explicabo maxime facilis, sapiente corrupti animi sint placeat perspiciatis, id, ullam nulla beatae architecto exercitationem itaque quibusdam temporibus facere!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque fugit explicabo maxime facilis, sapiente corrupti animi sint placeat perspiciatis, id, ullam nulla beatae architecto exercitationem itaque quibusdam temporibus facere!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque fugit explicabo maxime facilis, sapiente corrupti animi sint placeat perspiciatis, id, ullam nulla beatae architecto exercitationem itaque quibusdam temporibus facere!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque fugit explicabo maxime facilis, sapiente corrupti animi sint placeat perspiciatis, id, ullam nulla beatae architecto exercitationem itaque quibusdam temporibus facere!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque fugit explicabo maxime facilis, sapiente corrupti animi sint placeat perspiciatis, id, ullam nulla beatae architecto exercitationem itaque quibusdam temporibus facere!
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
