@@ -39,3 +39,7 @@ Route::group([
 
 Route::post('/create-about-me', [AboutMe::class, 'create'])->name('create-about-me');
 Route::post('/set-about-me', [AboutMe::class, 'update'])->name('set-about-me');
+
+Route::get('/phpinfo', function () {
+    return phpinfo();
+});

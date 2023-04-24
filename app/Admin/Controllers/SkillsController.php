@@ -26,6 +26,8 @@ class SkillsController extends AdminController
     {
         $grid = new Grid(new Skills());
 
+        $grid->sortable();
+
         $grid->filter(function ($filter) {
 
             // Remove the default id filter
@@ -42,7 +44,6 @@ class SkillsController extends AdminController
         $grid->column('image', __('Image'))->image('', 100, 100);
         $grid->column('tag', __('Tag'))->text();
         $grid->column('label', __('Label'))->text();
-        $grid->column('order', __('Order'))->integer()->sortable();
 
         return $grid;
     }
