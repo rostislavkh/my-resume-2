@@ -1,4 +1,12 @@
-let aos = null;
+window.axios = require('axios');
+
+window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+
+let token = document.head.querySelector('meta[name="csrf-token"]');
+
+if (token) {
+    window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
+}
 
 //in case js in turned off
 function liveHeader() {
@@ -71,4 +79,84 @@ $('.burger-btn').click(function () {
     document.querySelector('.mobile-header').classList.toggle('active');
     document.querySelector('body').classList.toggle('oh');
     document.querySelector('.burger').classList.toggle('active');
+});
+
+
+
+
+// Search
+
+$('input[name="search"]').focus(function () {
+    let resultMenu = this.parentElement.querySelector('.result-search');
+    if (!resultMenu.classList.contains('active')) {
+        resultMenu.classList.add('active');
+    }
+});
+$('input[name="search"]').focusout(function () {
+    let resultMenu = this.parentElement.querySelector('.result-search');
+    if (resultMenu.classList.contains('active')) {
+        resultMenu.classList.remove('active');
+    }
+});
+
+let timeout = null;
+
+$('input[name="search"]').on('keyup ', function () {
+    if (timeout != null) {
+        clearTimeout(timeout);
+        timeout = null
+    }
+
+    let value = this.value;
+    let resultMenu = this.parentElement.querySelector('.result-search');
+    let list = resultMenu.querySelector('.list');
+    let loader = resultMenu.querySelector('.loading');
+    loader.classList.add('active');
+    resultMenu.style.height = '100%';
+    list.innerHTML = '';
+
+    if (this.value != "") {
+        timeout = setTimeout(async () => {
+            let data = null;
+            await axios.post("/search", {
+                q: value
+            }).then(response => (data = response.data));
+
+            if (data) {
+                if (data.projects.length != 0 || data.tags.length != 0) {
+                    resultMenu.style.height = '100vh';
+                }
+                if (data.projects.length != 0) {
+                    list.innerHTML += `<li class="label">${data.label_1}</li>`;
+
+                    for (const [key, value] of Object.entries(data.projects)) {
+                        list.innerHTML += `<li class="proj">
+                            <a href="${data.projects[key].url}">
+                                <img src="${data.projects[key].img}" alt="img">
+                                <div class="proj__info">
+                                    <h4 class="name">${data.projects[key].name}</h4>
+                                    <div class="desc">${data.projects[key].short_desc}</div>
+                                </div>
+                            </a>
+                        </li>`;
+                    }
+                }
+                if (data.tags.length != 0) {
+                    list.innerHTML += ` <li class="label">${data.label_2}</li>`;
+                    for (const [key, value] of Object.entries(data.tags)) {
+                        list.innerHTML += `<li class="tag"><a href="${data.tags[key].url}">#${data.tags[key].tag}</a></li>`;
+                    }
+                }
+            }
+
+            if (loader.classList.contains('active')) {
+                loader.classList.remove('active');
+            }
+        }, 1000);
+    } else {
+        if (loader.classList.contains('active')) {
+            loader.classList.remove('active');
+        }
+        resultMenu.style.height = '100%';
+    }
 });

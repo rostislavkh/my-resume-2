@@ -4,6 +4,7 @@ use App\Http\Controllers\AboutMe;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProjectsController;
+use App\Http\Controllers\SearchController;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 /*
@@ -35,3 +36,4 @@ Route::group([
 Route::post('/create-about-me', [AboutMe::class, 'create'])->name('create-about-me');
 Route::post('/set-about-me', [AboutMe::class, 'update'])->name('set-about-me');
 Route::post('/make-request', [HomeController::class, 'makeRequest'])->name('make-request');
+Route::post('/search', [SearchController::class, 'query'])->name('search');

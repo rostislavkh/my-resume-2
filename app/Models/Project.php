@@ -2,8 +2,8 @@
 
 namespace App\Models;
 
-use App\Helpers\Translation;
 use Illuminate\Support\Str;
+use App\Helpers\Translation;
 use Spatie\EloquentSortable\Sortable;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\EloquentSortable\SortableTrait;

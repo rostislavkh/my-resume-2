@@ -118,6 +118,7 @@ header {
             border-radius: 10px;
             padding: 10px 35px 10px 10px;
             width: 160px;
+            // width: 300px;
             letter-spacing: $lsp;
             transition: .3s;
 
@@ -155,25 +156,35 @@ header {
 
     .result-search {
         position: absolute;
-        top: calc(100% + 100px);
+        top: -8px;
         opacity: 0;
-        pointer-events: none;
 
         left: -8px;
         width: calc(100% + 16px);
-        max-height: 400px;
-        height: 100vh;
+        max-height: 80vh;
+        height: 100%;
         background-color: $bg-block-2;
-        border-radius: 10px;
+        border-radius: 5px 5px 10px 10px;
         z-index: -1;
         padding: 60px 15px 5px 15px;
         box-shadow: $header-shadow;
         transition: .3s;
 
+        .loading {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: $yellow;
+
+            &.active {
+                animation: loading 1s ease-in-out infinite
+            }
+        }
+
         &.active {
-            top: -8px;
             opacity: 1;
-            pointer-events: all;
             transition: .3s;
         }
     }
@@ -182,6 +193,7 @@ header {
         overflow-x: hidden;
         overflow-y: auto;
         padding-right: 5px;
+        max-height: 100%;
 
         &::-webkit-scrollbar {
             width: 2px;
@@ -195,8 +207,6 @@ header {
             background-color: $bg-header;
             backdrop-filter: blur(10px);
         }
-
-        max-height: 100%;
 
         li:first-child {
             padding-top: 0;
@@ -266,6 +276,7 @@ header {
                     line-height: $lh-txt;
                     max-height: 80px;
                     overflow: hidden;
+                    box-shadow: none;
                     transition: .3s;
                 }
             }
@@ -296,7 +307,6 @@ header {
         z-index: 1;
 
         max-height: calc(100vh - 80px);
-        height: calc(100vh - 90px);
 
         &.active {
             padding-top: 80px;
@@ -501,6 +511,20 @@ header.small {
         a, .lang {
             font-size: $header-mobile-mini-s;
         }
+    }
+}
+
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        right: 0;
+        left: unset;
+        width: 0;
     }
 }
 
