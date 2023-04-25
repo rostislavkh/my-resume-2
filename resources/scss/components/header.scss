@@ -306,7 +306,7 @@ header {
     .result-search-mobile {
         z-index: 1;
 
-        max-height: calc(100vh - 80px);
+        max-height: calc($fh - 80px);
 
         &.active {
             padding-top: 80px;
@@ -345,7 +345,7 @@ header.small {
     opacity: 0;
     transition: .3s;
     width: 100vw;
-    height: 100vh;
+    height: $fh;
     background-color: $bg-header;
     backdrop-filter: blur(10px);
     pointer-events: none;

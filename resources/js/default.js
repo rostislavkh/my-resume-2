@@ -139,7 +139,7 @@ $('input[name="search"]').on('keyup ', function () {
 
             if (data) {
                 if (data.projects.length != 0 || data.tags.length != 0) {
-                    resultMenu.style.height = '100vh';
+                    resultMenu.style.height = 'calc(var(--vh, 1vh) * 100)';
                 }
                 if (data.projects.length != 0) {
                     list.innerHTML += `<li class="label">${data.label_1}</li>`;
