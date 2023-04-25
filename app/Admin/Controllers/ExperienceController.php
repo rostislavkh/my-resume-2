@@ -75,7 +75,7 @@ class ExperienceController extends AdminController
     {
         $form = new Form(new Eexperience());
 
-        $form->number('order', __('Order'))->required()->default(Eexperience::all()->count());
+        $form->number('order', __('Order'))->required()->default(0);
         $form->text('company_name_en', __('Company name [EN]'))->required();
         $form->text('company_name_uk', __('Company name [UK]'))->required();
         $form->text('position_en', __('Position [EN]'))->required();
