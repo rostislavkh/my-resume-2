@@ -369,6 +369,17 @@
   color: #b9b9ba;
   margin-top: 10px;
 }
+.experience .exp__description p {
+  padding-bottom: 10px;
+}
+.experience .exp__description a, .experience .exp__description strong {
+  color: #ffc86b;
+  transition: 0.3s;
+}
+.experience .exp__description a:hover {
+  text-shadow: #ffc86b 1px 0 10px;
+  transition: 0.3s;
+}
 .experience .exp__date {
   position: absolute;
   top: -10px;

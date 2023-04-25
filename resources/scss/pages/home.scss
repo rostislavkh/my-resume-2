@@ -413,6 +413,20 @@
             font-size: $subtitle-mobile-2-s;
             color: $txt-color-inact;
             margin-top: 10px;
+
+            p {
+                padding-bottom: 10px;
+            }
+
+            a, strong {
+                color: $yellow;
+                transition: .3s;
+            }
+
+            a:hover {
+                text-shadow: $txt-yellow-shadow;
+                transition: .3s;
+            }
         }
 
         &__date {
