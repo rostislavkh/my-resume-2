@@ -116,7 +116,7 @@ header {
             font-family: $header-f;
             border: none;
             border-radius: 10px;
-            padding: 10px 35px 10px 10px;
+            padding: 10px 35px 10px 12px;
             width: 160px;
             // width: 300px;
             letter-spacing: $lsp;
@@ -327,7 +327,7 @@ header.small {
     .search input {
         border: 1px solid $txt-color;
         background-color: $bg-header;
-        padding: 4px 30px 4px 4px;
+        padding: 4px 30px 4px 12px;
     }
 
     .search svg {

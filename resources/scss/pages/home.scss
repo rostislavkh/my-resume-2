@@ -51,7 +51,6 @@
         font-family: $title-f;
         font-size: $title-s;
         display: block;
-        margin-left: 20px;
         margin-bottom: -4px;
     }
 
@@ -143,6 +142,8 @@
     &__text {
         margin-top: 40px;
         margin-left: 80px;
+        font-size: $header-s;
+        text-align: justify;
         position: relative;
 
         strong {
@@ -180,23 +181,23 @@
     &__block {
         z-index: 1;
         display: flex;
-        width: 250px;
-        height: 250px;
+        width: 175px;
+        height: 175px;
         border-radius: 20px;
         background-color: $bg-block-2;
         box-shadow: $tile-shadow;
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
-        padding: 40px 10px;
-        font-size: $subtitle-mobile-s;
+        padding: 20px 10px;
+        font-size: $subtitle-mobile-2-s;
         font-family: $txt-f;
         color: $txt-color;
         transition: .3s!important;
 
         img {
-            max-width: 175px;
-            max-height: 125px;
+            max-width: 125px;
+            max-height: 85px;
             border-radius: 10px;
             transition: .3s;
         }
@@ -268,7 +269,7 @@
             gap: 10px;
             top: 0;
             left: 0;
-            padding: 10px;
+            padding: 20px;
             opacity: 0;
             transition: .3s;
 
@@ -276,6 +277,7 @@
                 font-family: $txt-f;
                 font-size: $subtitle-s;
                 letter-spacing: $lsp-txt;
+                text-align: justify;
                 text-align: center;
             }
 
@@ -287,6 +289,7 @@
                 -webkit-line-clamp: 3;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                text-align: justify;
                 font-family: $txt-f;
                 font-size: $subtitle-mobile-3-s;
                 line-height: $lh-txt;
@@ -414,9 +417,14 @@
             font-size: $subtitle-mobile-2-s;
             color: $txt-color-inact;
             margin-top: 10px;
+            text-align: justify;
 
             p {
                 padding-bottom: 10px;
+            }
+
+            a {
+                text-decoration: revert;
             }
 
             a, strong {
@@ -435,15 +443,16 @@
             top: -10px;
             right: calc(100% + 80px);
             width: max-content;
-            background-color: $bg-year;
+            background-color: $bg-year-2;
             padding: 10px 10px 10px 20px;
+            font-size: $header-s;
             z-index: 1;
 
             &::before {
                 content: "";
                 border-radius: 50% 50% 0 50%;
                 position: absolute;
-                background-color: $bg-year;
+                background-color: $bg-year-2;
                 width: 48px;
                 height: 48px;
                 top: 0;
@@ -812,34 +821,10 @@ footer {
 @media screen and (max-width: 590px) {
     .skills {
         gap: 20px;
-
-        &__block {
-            width: 200px;
-            height: 200px;
-
-            img {
-                max-width: 125px;
-                max-height: 75px;
-            }
-        }
     }
 }
 
 @media screen and (max-width: 466px) {
-    .skills {
-        gap: 20px;
-
-        &__block {
-            width: 100%;
-            height: 300px;
-
-            img {
-                max-width: 90%;
-                max-height: 50%;
-            }
-        }
-    }
-
     .portfolio {
         &__block {
             width: 100%;
@@ -851,6 +836,13 @@ footer {
 @media screen and (max-width: 425px) {
     .about {
         padding: 40px 0;
+    }
+
+    .skills {
+        &__block {
+            height: 150px;
+            width: 150px;
+        }
     }
 
     .titule {
@@ -878,15 +870,24 @@ footer {
     .my-contacts .contacts__item span {
         font-size: $subtitle-mobile-2-s;
     }
+
+    .skills {
+        gap: 10px;
+        
+        &__block {
+            height: 120px;
+            width: 120px;
+            font-size: $subtitle-mobile-3-s;
+
+            img {
+                max-width: 90px;
+                max-height: 50px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 320px) {
-    .skills {
-        &__block {
-            height: 250px;
-        }
-    }
-
     .titule {
         &__text, p, a {
             font-size: $subtitle-mobile-2-s;

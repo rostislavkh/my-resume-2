@@ -14,7 +14,7 @@
     <section class="main-block block-1">
         <div class="titule container">
             <div class="titule__text" data-aos="fade-right" data-aos-delay="400">
-                <p><span>{{ __("I'M") }}</span> <span class="titule__name">{{ $about?->getTranslate('name') }}</span></p>
+                <p><span class="titule__name">{{ $about?->getTranslate('name') }}</span></p>
                 <div class="profession">
                     <ul id="proff">
                         @if($about?->positions)
