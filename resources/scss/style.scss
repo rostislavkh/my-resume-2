@@ -139,7 +139,7 @@ footer {
         .bg-line {
             width: 25%;
             background: $bg-block-2;
-            height: 100vh;
+            height: $fh;
             transition: .3s;
             border-radius: 0;
         }

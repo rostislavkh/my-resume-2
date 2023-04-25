@@ -145,7 +145,7 @@ footer a:hover {
 .preloader .preloader-bg .bg-line {
   width: 25%;
   background: #3d3e42;
-  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   transition: 0.3s;
   border-radius: 0;
 }
