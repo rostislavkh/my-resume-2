@@ -104,7 +104,9 @@ header .search {
   margin-right: 40px;
 }
 header .search input {
-  background-color: #3d3e42;
+  background-color: rgba(65, 66, 71, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   color: #ffc86b;
   font-size: 22px;
   font-family: "Montserrat-Regular";
@@ -287,9 +289,7 @@ header.small .logo img {
   width: 60px;
 }
 header.small .search input {
-  border: 1px solid #eaeaea;
-  background-color: rgba(52, 53, 58, 0.5);
-  padding: 4px 30px 4px 12px;
+  padding: 6px 30px 6px 12px;
 }
 header.small .search svg {
   top: 9px;
@@ -304,8 +304,8 @@ header.small .search svg {
   width: 100vw;
   height: calc(var(--vh, 1vh) * 100);
   background-color: rgba(52, 53, 58, 0.5);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
   pointer-events: none;
   display: flex;
   flex-direction: column;

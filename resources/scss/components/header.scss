@@ -110,7 +110,8 @@ header {
         margin-right: 40px;
         
         input {
-            background-color: $inp-bg;
+            background-color: $bg-search;
+            backdrop-filter: blur(10px);
             color: $yellow;
             font-size: $header-s;
             font-family: $header-f;
@@ -325,9 +326,7 @@ header.small {
     }
 
     .search input {
-        border: 1px solid $txt-color;
-        background-color: $bg-header;
-        padding: 4px 30px 4px 12px;
+        padding: 6px 30px 6px 12px;
     }
 
     .search svg {
@@ -347,7 +346,7 @@ header.small {
     width: 100vw;
     height: $fh;
     background-color: $bg-header;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     pointer-events: none;
     display: flex;
     flex-direction: column;
