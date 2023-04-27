@@ -1,20 +1,10 @@
 @font-face {
-  font-family: "PTSans-Regular";
-  src: url("/fonts/PTSans-Regular.ttf");
-  font-style: normal;
-  font-weight: 400;
+  font-family: "Montserrat-SemiBold";
+  src: url("/fonts/Montserrat-SemiBold.ttf");
 }
 @font-face {
-  font-family: "RobotoMono-Regular";
-  src: url("/fonts/RobotoMono-Regular.ttf");
-  font-style: normal;
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Merriweather-Bold";
-  src: url("/fonts/Merriweather-Bold.ttf");
-  font-style: normal;
-  font-weight: 700;
+  font-family: "Montserrat-Regular";
+  src: url("/fonts/Montserrat-Regular.ttf");
 }
 .titule {
   display: flex;
@@ -35,7 +25,7 @@
   display: flex;
   align-items: flex-end;
   font-size: 28px;
-  font-family: "RobotoMono-Regular";
+  font-family: "Montserrat-Regular";
 }
 .titule__text p:first-child {
   max-width: 1000px;
@@ -44,12 +34,12 @@
   display: block;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 15px 20px;
+  padding: 10px 15px;
   border: 4px solid #ffc86b;
   border-radius: 10px;
   background: none;
   font-size: 28px;
-  font-family: "RobotoMono-Regular";
+  font-family: "Montserrat-Regular";
   color: #ffc86b;
   transition: 0.3s;
 }
@@ -60,7 +50,7 @@
 }
 .titule__name {
   color: #ffc86b;
-  font-family: "Merriweather-Bold";
+  font-family: "Montserrat-SemiBold";
   font-size: 48px;
   display: block;
   margin-bottom: -4px;
@@ -142,14 +132,14 @@
   margin-top: 40px;
   margin-left: 80px;
   font-size: 22px;
-  text-align: justify;
+  word-wrap: break-word;
   position: relative;
 }
 .about__text strong {
   color: #ffc86b;
 }
 .about__text p {
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 }
 .about__text::before {
   content: "";
@@ -182,7 +172,7 @@
   align-items: center;
   padding: 20px 10px;
   font-size: 18px;
-  font-family: "RobotoMono-Regular";
+  font-family: "Montserrat-Regular";
   color: #eaeaea;
   transition: 0.3s !important;
 }
@@ -253,7 +243,7 @@
   transition: 0.3s;
 }
 .portfolio__block div .work__title {
-  font-family: "RobotoMono-Regular";
+  font-family: "Montserrat-Regular";
   font-size: 28px;
   letter-spacing: -1px;
   text-align: justify;
@@ -269,14 +259,14 @@
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: justify;
-  font-family: "RobotoMono-Regular";
+  font-family: "Montserrat-Regular";
   font-size: 14px;
-  line-height: 25px;
+  line-height: 24px;
 }
 .portfolio__block div a {
-  font-family: "RobotoMono-Regular";
+  font-family: "Montserrat-Regular";
   font-size: 14px;
-  line-height: 25px;
+  line-height: 24px;
   color: #3d3e42;
   background-color: #ffc86b;
   border-radius: 10px;
@@ -297,9 +287,9 @@
   display: block;
   width: -moz-fit-content;
   width: fit-content;
-  font-family: "RobotoMono-Regular";
+  font-family: "Montserrat-Regular";
   font-size: 18px;
-  line-height: 25px;
+  line-height: 24px;
   color: #3d3e42;
   background-color: #ffc86b;
   border-radius: 10px;
@@ -360,12 +350,12 @@
   box-shadow: 0px 0px 20px 0px #ffc86b;
 }
 .experience .exp__position {
-  font-family: "PTSans-Regular";
+  font-family: "Montserrat-Regular";
   font-size: 28px;
   font-weight: bold;
 }
 .experience .exp__company {
-  font-family: "PTSans-Regular";
+  font-family: "Montserrat-Regular";
   font-size: 24px;
 }
 .experience .exp__description {
@@ -375,7 +365,7 @@
   text-align: justify;
 }
 .experience .exp__description p {
-  padding-bottom: 10px;
+  padding-bottom: 25px;
 }
 .experience .exp__description a {
   -webkit-text-decoration: revert;
@@ -458,7 +448,7 @@
   background-color: #3d3e42;
   border: 2px solid #3d3e42;
   padding: 10px 20px;
-  font-family: "PTSans-Regular";
+  font-family: "Montserrat-Regular";
   font-size: 22px;
   color: #ffc86b;
   outline: none;
@@ -495,7 +485,7 @@
   padding: 10px 0;
   border-radius: 10px;
   background: none;
-  font-family: "PTSans-Regular";
+  font-family: "Montserrat-Regular";
   font-size: 22px;
   color: #ffc86b;
   margin: auto;
@@ -578,7 +568,7 @@
 }
 .my-contacts .contacts__item span {
   color: #ffc86b;
-  font-family: "PTSans-Regular";
+  font-family: "Montserrat-Regular";
   font-size: 24px;
   transition: 0.3s;
 }
@@ -703,6 +693,8 @@ footer {
     padding: 80px 0;
   }
   .about__text {
+    font-size: 18px;
+    text-align: justify;
     margin-left: 0;
   }
   .about__text::before {

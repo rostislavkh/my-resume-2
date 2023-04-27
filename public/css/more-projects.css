@@ -1,20 +1,10 @@
 @font-face {
-  font-family: "PTSans-Regular";
-  src: url("/fonts/PTSans-Regular.ttf");
-  font-style: normal;
-  font-weight: 400;
+  font-family: "Montserrat-SemiBold";
+  src: url("/fonts/Montserrat-SemiBold.ttf");
 }
 @font-face {
-  font-family: "RobotoMono-Regular";
-  src: url("/fonts/RobotoMono-Regular.ttf");
-  font-style: normal;
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Merriweather-Bold";
-  src: url("/fonts/Merriweather-Bold.ttf");
-  font-style: normal;
-  font-weight: 700;
+  font-family: "Montserrat-Regular";
+  src: url("/fonts/Montserrat-Regular.ttf");
 }
 .portfolio {
   padding-top: 140px;
@@ -60,7 +50,7 @@
   transition: 0.3s;
 }
 .portfolio__block div .work__title {
-  font-family: "RobotoMono-Regular";
+  font-family: "Montserrat-Regular";
   font-size: 28px;
   letter-spacing: -1px;
   text-align: center;
@@ -75,14 +65,14 @@
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: justify;
-  font-family: "RobotoMono-Regular";
+  font-family: "Montserrat-Regular";
   font-size: 14px;
-  line-height: 25px;
+  line-height: 24px;
 }
 .portfolio__block div a {
-  font-family: "RobotoMono-Regular";
+  font-family: "Montserrat-Regular";
   font-size: 14px;
-  line-height: 25px;
+  line-height: 24px;
   color: #3d3e42;
   background-color: #ffc86b;
   border-radius: 10px;
@@ -103,7 +93,7 @@
   margin-top: 40px;
 }
 .pagination ul li {
-  font-family: "PTSans-Regular";
+  font-family: "Montserrat-Regular";
   font-size: 24px;
   color: #ffc86b;
 }

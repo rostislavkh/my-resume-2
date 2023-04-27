@@ -130,7 +130,6 @@
     line-height: $lh-txt;
     padding: 60px 20px;
     margin-top: 40px;
-    text-align: justify;
 
     .title {
         margin-bottom: 40px;
@@ -151,7 +150,7 @@
     }
 
     p, ul {
-        padding-bottom: 20px;
+        padding-bottom: 25px;
     }
 
     ul {
@@ -258,5 +257,15 @@
 @media screen and (max-width: 961px) {
     .titule {
         padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .titule {
+        padding-top: 0;
+    }
+
+    .description {
+        font-size: $subtitle-mobile-2-s;
     }
 }

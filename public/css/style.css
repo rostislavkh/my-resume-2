@@ -1,20 +1,10 @@
 @font-face {
-  font-family: "PTSans-Regular";
-  src: url("/fonts/PTSans-Regular.ttf");
-  font-style: normal;
-  font-weight: 400;
+  font-family: "Montserrat-SemiBold";
+  src: url("/fonts/Montserrat-SemiBold.ttf");
 }
 @font-face {
-  font-family: "RobotoMono-Regular";
-  src: url("/fonts/RobotoMono-Regular.ttf");
-  font-style: normal;
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Merriweather-Bold";
-  src: url("/fonts/Merriweather-Bold.ttf");
-  font-style: normal;
-  font-weight: 700;
+  font-family: "Montserrat-Regular";
+  src: url("/fonts/Montserrat-Regular.ttf");
 }
 html {
   scroll-behavior: smooth;
@@ -87,13 +77,13 @@ main {
 
 .title {
   font-size: 48px;
-  font-family: "Merriweather-Bold";
+  font-family: "Montserrat-SemiBold";
   text-align: center;
   margin-bottom: 30px;
 }
 
 .text {
-  font-family: "PTSans-Regular";
+  font-family: "Montserrat-Regular";
   font-size: 24px;
   line-height: 28px;
   color: #eaeaea;
@@ -110,7 +100,7 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   font-size: 18px;
-  font-family: "PTSans-Regular";
+  font-family: "Montserrat-Regular";
   color: #ffc86b;
   gap: 5px;
 }
@@ -223,7 +213,7 @@ footer a:hover {
 .preloader .preload .loading-text {
   color: #ffc86b;
   font-size: 22px;
-  font-family: "PTSans-Regular";
+  font-family: "Montserrat-Regular";
   animation: fade 1s ease 0s infinite;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -304,7 +294,7 @@ footer a:hover {
   height: -moz-fit-content;
   height: fit-content;
   color: #34353a;
-  font-family: "PTSans-Regular";
+  font-family: "Montserrat-Regular";
   font-size: 24px;
   margin-left: 25px;
   text-align: center;

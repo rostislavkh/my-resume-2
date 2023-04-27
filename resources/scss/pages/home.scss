@@ -29,7 +29,7 @@
         a {
             display: block;
             width: fit-content;
-            padding: 15px 20px;
+            padding: 10px 15px;
             border: 4px solid $yellow;
             border-radius: 10px;
             background: none;
@@ -143,7 +143,7 @@
         margin-top: 40px;
         margin-left: 80px;
         font-size: $header-s;
-        text-align: justify;
+        word-wrap: break-word;
         position: relative;
 
         strong {
@@ -151,7 +151,7 @@
         }
 
         p {
-            padding-bottom: 15px;
+            padding-bottom: 25px;
         }
 
         &::before {
@@ -420,7 +420,7 @@
             text-align: justify;
 
             p {
-                padding-bottom: 10px;
+                padding-bottom: 25px;
             }
 
             a {
@@ -808,6 +808,8 @@ footer {
         padding: 80px 0;
 
         &__text {
+            font-size: $subtitle-mobile-2-s;
+            text-align: justify;
             margin-left: 0;
             
             &::before {

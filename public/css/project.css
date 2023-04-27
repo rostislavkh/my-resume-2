@@ -1,20 +1,10 @@
 @font-face {
-  font-family: "PTSans-Regular";
-  src: url("/fonts/PTSans-Regular.ttf");
-  font-style: normal;
-  font-weight: 400;
+  font-family: "Montserrat-SemiBold";
+  src: url("/fonts/Montserrat-SemiBold.ttf");
 }
 @font-face {
-  font-family: "RobotoMono-Regular";
-  src: url("/fonts/RobotoMono-Regular.ttf");
-  font-style: normal;
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Merriweather-Bold";
-  src: url("/fonts/Merriweather-Bold.ttf");
-  font-style: normal;
-  font-weight: 700;
+  font-family: "Montserrat-Regular";
+  src: url("/fonts/Montserrat-Regular.ttf");
 }
 .titule {
   background-color: #34353a;
@@ -55,8 +45,8 @@
 }
 .titule .main-block .info .short-desc {
   font-size: 18px;
-  font-family: "RobotoMono-Regular";
-  line-height: 25px;
+  font-family: "Montserrat-Regular";
+  line-height: 24px;
   min-width: 500px;
 }
 
@@ -81,7 +71,7 @@
   color: #eaeaea;
   padding: 10px 20px;
   border-radius: 10px;
-  font-family: "PTSans-Regular";
+  font-family: "Montserrat-Regular";
   font-size: 24px;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
@@ -110,12 +100,11 @@
 
 .description {
   color: #eaeaea;
-  font-family: "PTSans-Regular";
+  font-family: "Montserrat-Regular";
   font-size: 22px;
-  line-height: 25px;
+  line-height: 24px;
   padding: 60px 20px;
   margin-top: 40px;
-  text-align: justify;
 }
 .description .title {
   margin-bottom: 40px;
@@ -133,7 +122,7 @@
   transition: 0.3s;
 }
 .description p, .description ul {
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 .description ul li {
   margin-left: 40px;
@@ -213,5 +202,13 @@
 @media screen and (max-width: 961px) {
   .titule {
     padding-top: 0;
+  }
+}
+@media screen and (max-width: 625px) {
+  .titule {
+    padding-top: 0;
+  }
+  .description {
+    font-size: 18px;
   }
 }
