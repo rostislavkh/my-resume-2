@@ -104,7 +104,7 @@ header .search {
   margin-right: 40px;
 }
 header .search input {
-  background-color: rgba(65, 66, 71, 0.5);
+  background-color: rgba(91, 92, 95, 0.3);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   color: #ffc86b;
@@ -140,6 +140,9 @@ header .search svg {
 
 .search {
   position: relative;
+}
+.search svg {
+  transition: 0.3s;
 }
 .search .lang {
   position: absolute;
@@ -293,6 +296,7 @@ header.small .search input {
 }
 header.small .search svg {
   top: 9px;
+  transition: 0.3s;
 }
 
 .mobile-header {
@@ -388,7 +392,12 @@ header.small .search svg {
   pointer-events: none;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1408px) {
+  header a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1280px) {
   header {
     padding: 10px 30px;
   }
