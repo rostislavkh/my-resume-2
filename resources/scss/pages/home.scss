@@ -637,7 +637,7 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            gap: 15px;
+            gap: 10px;
             transition: .3s;
 
             svg  {
@@ -648,7 +648,7 @@
             span {
                 color: $yellow;
                 font-family: $header-f;
-                font-size: $subtitle-mobile-s;
+                font-size: $txt-s;
                 transition: .3s;
             }
 

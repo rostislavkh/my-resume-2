@@ -560,7 +560,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
   transition: 0.3s;
 }
 .my-contacts .contacts__item svg {
@@ -570,7 +570,7 @@
 .my-contacts .contacts__item span {
   color: #ffc86b;
   font-family: "Montserrat-Regular";
-  font-size: 24px;
+  font-size: 18px;
   transition: 0.3s;
 }
 .my-contacts .contacts__item:hover {
