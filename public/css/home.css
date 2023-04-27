@@ -41,6 +41,7 @@
   font-size: 28px;
   font-family: "Montserrat-Regular";
   color: #ffc86b;
+  margin-top: 10%;
   transition: 0.3s;
 }
 .titule__text a:hover {
@@ -76,7 +77,7 @@
 
 .block-1 {
   overflow: hidden;
-  background-color: #34353a;
+  background-color: #1e212b;
   box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -609,6 +610,9 @@ footer {
     margin-top: -160px;
     margin-right: -140px;
   }
+  .titule a {
+    margin-top: 0;
+  }
 }
 @media screen and (max-width: 950px) {
   .social {
@@ -668,6 +672,9 @@ footer {
   .titule__img img {
     margin: auto;
   }
+  .titule__img {
+    margin: auto auto 28vh auto;
+  }
   .titule__text {
     width: 100%;
     align-items: center;
@@ -676,9 +683,6 @@ footer {
     position: absolute;
     bottom: 0;
     border-radius: 10px;
-    background-color: rgba(52, 53, 58, 0.5);
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
     padding: 20px 10px;
   }
   .titule__text p {
@@ -721,14 +725,18 @@ footer {
     height: 150px;
     width: 150px;
   }
-  .titule__img {
-    margin: auto auto auto -150px;
-  }
   .titule__text, .titule p, .titule a {
     font-size: 24px;
   }
   .titule__text .titule__name {
     font-size: 34px;
+  }
+  .titule__img img {
+    margin: auto;
+    width: 100vw;
+    height: 75vh;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .portfolio__block {
     height: 220px;

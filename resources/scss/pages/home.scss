@@ -36,6 +36,7 @@
             font-size: $subtitle-s;
             font-family: $txt-f;
             color: $yellow;
+            margin-top: 10%;
             transition: .3s;
 
             &:hover {
@@ -78,7 +79,7 @@
 
 .block-1 {
     overflow: hidden;
-    background-color: $bg-block;
+    background-color: $bg-block-main;
     box-shadow: $header-shadow;
 }
 
@@ -703,6 +704,10 @@ footer {
             margin-top: -160px;
             margin-right: -140px;
         }
+
+        a {
+            margin-top: 0;
+        }
     }
 }
 
@@ -781,6 +786,10 @@ footer {
             margin: auto;
         }
 
+        &__img {
+            margin: auto auto 28vh auto;
+        }
+
         &__text {
             width: 100%;
             align-items: center;
@@ -789,8 +798,6 @@ footer {
             position: absolute;
             bottom: 0;
             border-radius: 10px;
-            background-color: $bg-header;
-            backdrop-filter: blur(5px);
             padding: 20px 10px;
 
             p {
@@ -848,16 +855,19 @@ footer {
     }
 
     .titule {
-        &__img {
-            margin: auto auto auto -150px;
-        }
-
         &__text, p, a {
             font-size: $subtitle-mobile-s;
         }
 
         &__text &__name {
             font-size: $title-mobile-s;
+        }
+
+        &__img img {
+            margin: auto;
+            width: 100vw;
+            height: 75vh;
+            object-fit: cover;
         }
     }
 
