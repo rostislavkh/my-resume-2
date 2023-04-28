@@ -15,6 +15,17 @@ class HomeController extends Controller
 
         $form = new Form($info);
 
+        $form->divider('Meta block');
+        $form->image('meta_img', 'Meta img')->required();
+        $form->text('meta_author_uk', 'Author [UK]')->required();
+        $form->text('meta_author_en', 'Author [EN]')->required();
+        $form->text('meta_title_uk', 'Title [UK]')->required();
+        $form->text('meta_title_en', 'Title [EN]')->required();
+        $form->text('meta_desc_uk', 'Description [UK]')->required();
+        $form->text('meta_desc_en', 'Description [EN]')->required();
+        $form->text('meta_keywords', 'Keywords')->placeholder('HTML, CSS, JavaScript')->required();
+
+
         $form->divider('Main block');
         $form->image('cv', 'CV')->required();
         $form->image('img', 'Image')->required();

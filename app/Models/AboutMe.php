@@ -24,7 +24,16 @@ class AboutMe extends Model
         'address_en',
         'address_uk',
         'address_url',
-        'email'
+        'email',
+
+        'meta_author_uk',
+        'meta_author_en',
+        'meta_title_en',
+        'meta_title_uk',
+        'meta_desc_uk',
+        'meta_desc_en',
+        'meta_keywords',
+        'meta_img'
     ];
 
     public function getPositionsAttribute($value)

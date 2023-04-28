@@ -1,5 +1,6 @@
 @php
-    $cv = \App\Models\AboutMe::get()->last()->cv;
+    $about_me = \App\Models\AboutMe::get()->last();
+    $cv = $about_me->cv;
 @endphp
 
 <!DOCTYPE html>
@@ -7,6 +8,15 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Meta tags -->
+        <meta name="theme-color" content="#3d3e42" />
+        <meta name="description" content="{{ $about_me->getTranslate('meta_desc') }}">
+        <meta name="keywords" content="{{ $about_me->meta_keywords }}">
+        <meta name="author" content="{{ $about_me->getTranslate('meta_author') }}">
+        <meta property="og:title" content="{{ $about_me->getTranslate('meta_title') }}" />
+        <meta property="og:description" content="{{ $about_me->getTranslate('meta_desc') }}" />
+        <meta property="og:image" content="{{ $about_me->meta_img }}" />
 
         <title>@yield('title')</title>
 
