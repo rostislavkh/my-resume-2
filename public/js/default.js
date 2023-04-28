@@ -38,14 +38,24 @@ if (token) {
 //in case js in turned off
 function liveHeader() {
   var inact = document.querySelector('#inact-h');
+  var main_block = document.querySelector('.main-block');
   if (inact) {
     $("header").addClass("small");
+    if (main_block) {
+      main_block.style.height = '100vh';
+    }
   } else {
     var sc = $(window).scrollTop();
     if (sc > 1) {
       $("header").addClass("small");
+      if (main_block) {
+        main_block.style.height = '100vh';
+      }
     } else {
       $("header").removeClass("small");
+      if (main_block) {
+        main_block.style.height = 'calc(var(--vh, 1vh) * 100)';
+      }
     }
   }
 }
