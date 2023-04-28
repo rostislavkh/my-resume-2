@@ -28,7 +28,7 @@
                 <a href="#contact-me">{{ __('Contact Me') }}</a>
             </div>
             <div class="titule__img" data-aos="fade-left" data-aos-delay="400">
-                <img src="./img/avatar.png" alt="avatar">
+                <img src="{{ url('/') }}/uploads/{{ $about->img }}" alt="avatar">
             </div>
             <ul class="social" data-aos="fade-up" data-aos-delay="400">
 

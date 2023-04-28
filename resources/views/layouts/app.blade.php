@@ -16,7 +16,7 @@
         <meta name="author" content="{{ $about_me->getTranslate('meta_author') }}">
         <meta property="og:title" content="{{ $about_me->getTranslate('meta_title') }}" />
         <meta property="og:description" content="{{ $about_me->getTranslate('meta_desc') }}" />
-        <meta property="og:image" content="{{ $about_me->meta_img }}" />
+        <meta property="og:image" content="{{ url('/') }}/uploads/{{ $about_me->meta_img }}" />
 
         <title>@yield('title')</title>
 
