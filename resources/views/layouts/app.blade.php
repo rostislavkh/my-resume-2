@@ -14,6 +14,7 @@
         <meta name="description" content="{{ $about_me->getTranslate('meta_desc') }}">
         <meta name="keywords" content="{{ $about_me->meta_keywords }}">
         <meta name="author" content="{{ $about_me->getTranslate('meta_author') }}">
+        <meta property="og:site_name" content="{{ $about_me->getTranslate('meta_author') }}">
         <meta property="og:title" content="{{ $about_me->getTranslate('meta_title') }}" />
         <meta property="og:description" content="{{ $about_me->getTranslate('meta_desc') }}" />
         <meta property="og:image" content="{{ url('/') }}/uploads/{{ $about_me->meta_img }}" />
