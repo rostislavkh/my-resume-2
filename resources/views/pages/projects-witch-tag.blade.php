@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="{{ mix('css/more-projects.css') }}">
 @endsection
 
-@section('title', 'Rostytlav Khorolskyi | #' . $tag)
+@section('title', 'Rostyslav Khorolskyi | #' . $tag)
 
 @section('content')
 <div id="inact-h"></div>

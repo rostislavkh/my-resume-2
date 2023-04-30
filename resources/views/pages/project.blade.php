@@ -8,7 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 @endsection
 
-@section('title', 'Rostytlav Khorolskyi | ' . $project->getTranslate('name'))
+@section('title', 'Rostyslav Khorolskyi | ' . $project->getTranslate('name'))
 
 @section('content')
 <section class="titule oh">
