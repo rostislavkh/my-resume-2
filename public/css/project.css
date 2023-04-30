@@ -203,6 +203,9 @@
   .titule {
     padding-top: 0;
   }
+  .titule .main-block {
+    height: auto;
+  }
 }
 @media screen and (max-width: 625px) {
   .titule {

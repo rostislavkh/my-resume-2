@@ -39,3 +39,34 @@ $(document).ready(function () {
         });
     });
 });
+
+//in case js in turned off
+function mainBlock() {
+    let inact = document.querySelector('#inact-h');
+    let main_block = document.querySelector('.main-block');
+
+    if (inact) {
+        if (main_block) {
+            main_block.style.height = '100vh';
+        }
+    } else {
+        var sc = $(window).scrollTop()
+        if (sc > 1) {
+            if (main_block) {
+                main_block.style.height = '100vh';
+            }
+        } else {
+            if (main_block) {
+                main_block.style.height = 'calc(var(--vh, 1vh) * 100)';
+            }
+        }
+    }
+}
+
+$(window).on('load', function () {
+    mainBlock();
+});
+
+$(window).scroll(function () {
+    mainBlock();
+});

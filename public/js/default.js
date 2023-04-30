@@ -34,28 +34,28 @@ var token = document.head.querySelector('meta[name="csrf-token"]');
 if (token) {
   window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
 }
+var body = document.querySelector('body');
+var preloader = document.getElementById('preloader');
+function preloaderOff() {
+  body.classList.contains('oh') ? body.classList.remove('oh') : null;
+  !preloader.classList.contains('loaded') ? preloader.classList.add('loaded') : null;
+}
+function preloaderOn() {
+  body.classList.contains('oh') ? body.classList.add('oh') : null;
+  !preloader.classList.contains('loaded') ? preloader.classList.remove('loaded') : null;
+}
 
 //in case js in turned off
 function liveHeader() {
   var inact = document.querySelector('#inact-h');
-  var main_block = document.querySelector('.main-block');
   if (inact) {
     $("header").addClass("small");
-    if (main_block) {
-      main_block.style.height = '100vh';
-    }
   } else {
     var sc = $(window).scrollTop();
     if (sc > 1) {
       $("header").addClass("small");
-      if (main_block) {
-        main_block.style.height = '100vh';
-      }
     } else {
       $("header").removeClass("small");
-      if (main_block) {
-        main_block.style.height = 'calc(var(--vh, 1vh) * 100)';
-      }
     }
   }
 }
@@ -80,14 +80,15 @@ $(window).on('load', function () {
     offset: 80,
     once: true
   });
-  document.querySelector('body').classList.toggle('oh');
-  document.getElementById('preloader').classList.toggle('loaded');
+  preloaderOff();
   liveHeader();
   scrollspy();
 });
 $(window).on('beforeunload', function () {
-  document.querySelector('body').classList.toggle('oh');
-  document.getElementById('preloader').classList.toggle('loaded');
+  preloaderOn();
+});
+window.addEventListener('popstate', function (event) {
+  preloaderOff();
 });
 $(window).scroll(function () {
   liveHeader();
