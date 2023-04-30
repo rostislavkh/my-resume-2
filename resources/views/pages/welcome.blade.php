@@ -8,7 +8,7 @@
     <script src="{{ mix('js/home.js') }}"></script>
 @endsection
 
-@section('title', 'Rostyslav Khorolskyi | ' . __('Resume'))
+@section('title', __('Resume'))
 
 @section('content')
     <section class="main-block block-1">
