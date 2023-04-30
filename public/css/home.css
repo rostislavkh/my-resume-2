@@ -249,6 +249,9 @@
   letter-spacing: -1px;
   text-align: justify;
   text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .portfolio__block div .work__text {
   text-align: center;
@@ -263,6 +266,9 @@
   font-family: "Montserrat-Regular";
   font-size: 14px;
   line-height: 24px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .portfolio__block div a {
   font-family: "Montserrat-Regular";

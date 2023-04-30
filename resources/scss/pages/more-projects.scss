@@ -48,6 +48,7 @@
                 font-size: $subtitle-s;
                 letter-spacing: $lsp-txt;
                 text-align: center;
+                user-select: none;
             }
 
             .work__text {
@@ -62,6 +63,7 @@
                 font-family: $txt-f;
                 font-size: $subtitle-mobile-3-s;
                 line-height: $lh-txt;
+                user-select: none;
             }
 
             a {
